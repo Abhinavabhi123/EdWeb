@@ -17,6 +17,8 @@
 
 .nav1 {
   padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
   font-size: 15px;
   height: 2.5rem;
 }
@@ -28,7 +30,7 @@
   animation: shrink 500ms ease-in-out forwards;
 }
 .nav1:hover {
-  background-color: #787777;
+  background-color: #999999;
   color: white;
 }
 
