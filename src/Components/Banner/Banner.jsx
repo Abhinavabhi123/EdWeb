@@ -17,35 +17,35 @@ export default function Banner() {
     <>
       <div className="w-full md:h-[36rem] h-[15rem] z-0  bg-slate-600 relative flex mb-20">
         <img
-          src="/Education 1.avif"
+          src="/Education 1.webp"
           alt="banner1"
           className={`${
             show === 1 ? "block" : "hidden"
           } banner_image image-animation`}
         />
         <img
-          src="/education 2.avif"
+          src="/Education 2.webp"
           alt="banner2"
           className={`${
             show === 2 ? "block" : "hidden"
           } banner_image image-animation`}
         />
         <img
-          src="/Education 3.avif"
+          src="/Education 3.jpeg"
           alt="banner3"
           className={`${
             show === 3 ? "block" : "hidden"
           } banner_image image-animation`}
         />
         <img
-          src="/Education 4.avif"
+          src="/Education 4.jpeg"
           alt="banner4"
           className={`${
             show === 4 ? "block" : "hidden"
           } banner_image image-animation`}
         />
         <img
-          src="/Education 5.avif"
+          src="/Education 5.jpeg"
           alt="banner5"
           className={`${
             show === 5 ? "block" : "hidden"
