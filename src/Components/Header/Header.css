@@ -1,0 +1,149 @@
+.navList {
+  cursor: pointer;
+  padding-left: 1px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+  justify-content: center;
+  height: 100%;
+  font-size: 17px;
+}
+
+.navList:hover {
+  border-bottom-color: #fedb00;
+}
+
+.nav1 {
+  padding-left: 0.5rem;
+  font-size: 15px;
+  height: 2.5rem;
+}
+.nav2 {
+  border-bottom: 1px solid black;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  animation: shrink 500ms ease-in-out forwards;
+}
+.nav1:hover {
+  background-color: #787777;
+  color: white;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+  color: #090909;
+  width: 2em;
+  height: 2em;
+  background: #041e42;
+  border: 1px solid #171717;
+  transition: all 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 15px;
+  height: 2px;
+  background: rgb(200, 200, 200);
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+input[type]:checked ~ span.top {
+  transform: translateY(280%) rotate(45deg);
+  width: 20px;
+}
+
+input[type]:checked ~ span.bot {
+  transform: translateY(-300%) rotate(-45deg);
+  width: 20px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.hello {
+  transition: width 2s ease-in-out;
+}
+
+.menu_details {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: all 1000ms ease-in-out;
+}
+.slider {
+  animation: slideMe 0.5s ease-in;
+}
+
+.nav_animate {
+  animation: alter 0.2s ease-out;
+}
+
+@media (max-width: 1290px) {
+  .menuButton {
+    display: flex;
+  }
+}
+@keyframes alter {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(80%);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
+@keyframes slideMe {
+  0% {
+    transform: translateX(500px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  80% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
