@@ -6,7 +6,7 @@ export default function NavBottom() {
         <ul className="flex justify-end items-center w-full h-full text-lg font-semibold gap-10 pt-3 pe-2  text-text_color">
           <li className="navList group relative">
             We Are GEMS
-            <ul className=" w-72 h-fit nav_animate z-50 absolute bg-white left-0 top-[3.8rem] border shadow-md rounded-md hidden group-hover:block hover:block">
+            <ul className=" w-72 h-fit nav_animate z-50 absolute bg-white left-0 top-[2.8rem] border shadow-md rounded-md hidden group-hover:block hover:block">
               <li className="nav1 rounded-t-md">Message From Our Founder</li>
               <li className="nav1">Missions & Values</li>
               <li className="nav1">Over 16 Years of Legacy</li>
@@ -21,7 +21,7 @@ export default function NavBottom() {
           </li>
           <li className="navList group relative">
             Our Promise
-            <ul className="w-72 nav_animate h-fit z-50 absolute bg-white top-[3.8rem] left-0 hidden border shadow-md rounded-md group-hover:block group-hover/suite:block">
+            <ul className="w-72 nav_animate h-fit z-50 absolute bg-white top-[2.8rem] left-0 hidden border shadow-md rounded-md group-hover:block group-hover/suite:block">
               <li className="nav1 rounded-t-md">The GEMS Difference</li>
               <li className="nav1">Great Teachers</li>
               <li className="nav1">Values-led Education</li>
@@ -42,7 +42,7 @@ export default function NavBottom() {
           </li>
           <li className="navList group relative">
             Our Schools
-            <ul className=" w-72 nav_animate h-fit z-50 absolute bg-white top-[3.55em] left-0 hidden group-hover:block group-hover/our:block shadow-md border rounded-md ">
+            <ul className=" w-72 nav_animate h-fit z-50 absolute bg-white top-[2.6em] left-0 hidden group-hover:block group-hover/our:block shadow-md border rounded-md ">
               <li className="nav1 relative flex justify-between pe-2 items-center group/our rounded-t-md">
                 Schools by Curriculum
                 <p>&#62;</p>
@@ -70,14 +70,14 @@ export default function NavBottom() {
           </li>
           <li className="navList relative group">
             Our Students
-            <ul className=" nav_animate w-72 h-fit z-50 absolute bg-white left-0 top-[3.8rem] rounded-md shadow-md border hidden group-hover:block">
+            <ul className=" nav_animate w-72 h-fit z-50 absolute bg-white left-0 top-[2.74rem] rounded-md shadow-md border hidden group-hover:block">
               <li className="nav1 rounded-t-md">Our Alumni - where are tye now ?</li>
               <li className="nav1 rounded-b-md">Student Experiences</li>
             </ul>
           </li>
           <li className="navList  relative group">
             News & Events
-            <ul className="w-72 nav_animate h-fit z-50 absolute bg-white left-0 top-[3.8rem] rounded-md shadow-md border hidden group-hover:block">
+            <ul className="w-72 nav_animate h-fit z-50 absolute bg-white left-0 top-[2.75rem] rounded-md shadow-md border hidden group-hover:block">
               <li className="nav1 rounded-t-md">News</li>
               <li className="nav1">GEMS Education Blogs</li>
               <li className="nav1 rounded-b-md">Open School Events</li>
@@ -85,7 +85,7 @@ export default function NavBottom() {
           </li>
           <li className="navList relative group">
             For Parents
-            <ul className="w-72 nav_animate h-fit z-50 absolute  top-[3.8rem] bg-white rounded-md border shadow-md hidden group-hover:block">
+            <ul className="w-72 nav_animate h-fit z-50 absolute top-[2.8rem] bg-white rounded-md border shadow-md hidden group-hover:block">
               <li className="nav1 rounded-t-md">School of Thought: Podcast</li>
               <li className="nav1">Choosing the Right School</li>
               <li className="nav1">Age-Grade Placement Guide</li>
