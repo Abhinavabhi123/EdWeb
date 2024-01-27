@@ -9,6 +9,9 @@ import MenuOpen from "./MenuOpen";
 export default function HeaderMain() {
   // const [isModalOpen, setIsModalOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  if(menuOpen){
+    window.scrollTo(0, 0);
+  }
 
   function menuHandler() {
     setMenuOpen(!menuOpen);

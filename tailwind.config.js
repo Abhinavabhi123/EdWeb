@@ -5,7 +5,10 @@ export default {
     extend: {
       colors: {
         text_color: '#041e42', 
-      }
+      },
+      fontFamily: {
+        'sans-condensed': ['"Encode Sans Condensed"', 'sans-serif'],
+      },
     }
   },
   plugins: [],
