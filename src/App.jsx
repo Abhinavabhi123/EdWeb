@@ -4,10 +4,12 @@ import HeaderMain from "./Components/Header/HeaderMain";
 
 function App() {
   return (
-    <div className="w-[100%] h-screen">
+    <div className="w-[100%] h-screen relative">
+      <div className="w-full h-[7rem] ">
       <HeaderMain/>
-      <Banner/>
-      <Body/>
+      </div>
+        <Banner />
+      <Body />
     </div>
   );
 }

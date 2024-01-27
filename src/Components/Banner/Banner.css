@@ -15,9 +15,21 @@
   animation: scaleImage 1s forwards ease-in-out;
 }
 
+.banner_text{
+  position: absolute;
+  z-index: 10;
+  font-weight: 700;
+  color: white;
+  font-size: 50px;
+}
+.img_animation{
+  transition: transform 0.5s ease-in-out; 
+  animation: scaleImage 1.5s forwards ease-in-out;
+}
+
 @keyframes scaleImage {
   0% {
-    image-rendering: optimizeQuality;
+    /* image-rendering: optimizeQuality; */
     transform: translateX(-500px)
   }
   100% {

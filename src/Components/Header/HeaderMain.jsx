@@ -15,8 +15,8 @@ export default function HeaderMain() {
   }
   return (
     <>
-      <div className="w-[100%] h-[7rem]  bg-transparent dark:bg-white max-[1290px]:h-[5.5rem] flex items-center justify-between px-2 shadow-md min-[1207px]:px-[15%] z-40 ">
-        <div className="w-fit h-full flex items-end pb-5">
+      <div className="w-[100%] h-[7rem] fixed bg-transparent pb-3 dark:bg-white max-[1290px]:h-[5.5rem] flex items-center justify-between px-2 shadow-md min-[1207px]:px-[15%] z-40 ">
+        <div className="w-fit h-full flex items-end">
           <img src="/logo.svg" alt="logo" className="w-24 md:w-28 h-auto cursor-pointer" />
         </div>
         <div className="w-[90%] h-full bg-transparent flex flex-col items-end justify-center">
