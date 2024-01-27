@@ -1,6 +1,7 @@
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
 import Body from "../Components/Card/Body";
+import Event from "../Components/Events/Event";
 import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 
@@ -22,7 +23,8 @@ export default function HomePage() {
         <h1 className="text-2xl font-bold underline">Syllabus</h1>
       </div>
       <Body />
-      <Enroll/>
+      <Enroll />
+      <Event />
     </div>
   );
 }
