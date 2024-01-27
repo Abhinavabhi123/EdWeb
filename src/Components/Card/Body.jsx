@@ -3,12 +3,12 @@ import "./Body.css";
 export default function Body() {
   return (
     <div className="body_card_wrapper pb-10 md:pb-5 md:pt-[2rem]">
-      <div className="body_card mb-10  w-[90%] md:w-[380px] group/item1 md:h-[29rem]">
+      <div className="body_card mb-10 overflow-hidden w-[90%] md:w-[380px] group/item1 md:h-[29rem]">
         <img src="/Students 1.webp" alt="img1" />
         <div className="static_text">
           <h1>Elementary </h1>
         </div>
-        <div className="card_info md:h-72 overflow-hidden">
+        <div className="card_info md:h-72 ">
           <div className="inner p-2 flex flex-col md:px-5 md:pt-5 h-[23rem] transform rounded-2xl md:group-hover/item1:translate-y-[-6rem]">
             <h1>Elementary </h1>
             <p>
