@@ -26,7 +26,7 @@ export default function MenuOpen(Props) {
     <div
       className={`${
         menuOpen === true ? "block" : "hidden"
-      } h-fit bg-text_color z-50 fixed nav_animate w-full min-[1290px]:hidden pb-5 px-5 mt-[5.5rem]`}
+      } h-fit bg-text_color z-50 absolute nav_animate w-full min-[1290px]:hidden pb-5 px-5 mt-[5.5rem]`}
     >
       <ul className="w-full h-full text-lg font-semibold text-white transition-all duration-500 ease-in-out">
         <div className="menu_details">
