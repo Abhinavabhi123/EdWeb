@@ -27,7 +27,7 @@ export default function Form() {
         <div className="w-full md:w-fit h-20 flex justify-center items-center">
           <button
             type="submit"
-            className="bg-blue-500 w-fit h-fit p-3 rounded-md text-white hover:bg-blue-600 "
+            className="bg-text_color w-fit h-fit p-3 rounded-md text-white hover:bg-blue-600 "
           >
             Submit
           </button>

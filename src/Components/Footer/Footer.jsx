@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="w-full h-fit bg-yellow-400 flex flex-col items-center mt-5">
+    <div className="w-full h-fit bg-text_color text-sm md:text-base text-white flex flex-col items-center mt-5">
       <div className="w-full h-fit bg-transparent">
         <img
           src="/logo.svg"

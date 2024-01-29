@@ -67,40 +67,53 @@ export default function Event() {
     );
   };
 
+  function scrollRight() {
+    const gridContainer = document.getElementById('gridContainer');
+    gridContainer.scrollLeft+=300;
+  }
+  function scrollLeft(){
+    const gridContainer = document.getElementById('gridContainer');
+    gridContainer.scrollLeft-=300;
+  }
+
+
+
   return (
     <div className="w-full h-[25rem] bg-transparent">
       <div className="event">
         <p>Events</p>
       </div>
       <div className="w-[100%] h-[18rem] bg-slate-100 flex justify-center items-center">
-        <div className=" w-[90%] md:w-[80%] h-[90%] bg-gray-300 rounded-2xl flex">
+        <div className=" w-[98%] md:w-[90%] h-[90%] bg--300 rounded-2xl flex">
           {/* Left Arrow */}
           <div className="h-full w-10 md:w-24 flex items-center justify-center">
             <FaCircleArrowLeft
               size={30}
               color="gray"
               className="cursor-pointer"
+              onClick={scrollLeft}
             />
           </div>
           {/* image slider section */}
-          <div className="h-full w-ful bg-white flex items-center px-3 gap-3 overflow-hidden">
+          <div className="h-full w-full bg-white grid px-3 gap-3 grid-flow-col overflow-x-scroll scroll-smooth gridContainer pt-2" id="gridContainer">
             {images.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className={`w-96 h-[95%]  rounded-lg relative`}
+                  className={`md:w-72 w-[17rem] h-[15rem]  rounded-lg relative`}
                 >
                   <div
-                    className={`rounded-t-lg bg-transparent  ${
+                    className={`rounded-t-lg bg-transparent overflow-hidden ${
                       !expandedItems.includes(i)
                         ? "img_full block"
                         : "img_null hidden"
+                        
                     }`}
                   >
                     <img
                       src={item?.img}
                       alt="image"
-                      className={`w-full object-cover rounded-t-lg h-full ease-in-out relative`}
+                      className={`w-full object-cover rounded-t-lg h-full ease-in-out relative transform duration-700 hover:scale-105`}
                     />
                   </div>
                   <div
@@ -140,6 +153,7 @@ export default function Event() {
               size={30}
               color="gray"
               className="cursor-pointer"
+              onClick={scrollRight}
             />
           </div>
         </div>

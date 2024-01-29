@@ -78,9 +78,16 @@
   font-weight: 600;
   transition: 0.5s all;
 }
+.static_text::before{
+  content: "";
+  position: absolute;
+  color: yellow;
+}
 .static_text h1{
   font-size: 24px;
-  color: yellow;
+  color: yellow !important;
+  
+  z-index: 10;
 }
 
 .card_info h1{
@@ -89,7 +96,7 @@
 
 .body_card:hover .static_text {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-10px);
 }
 .body_card:hover .card_info {
   opacity: 1;
@@ -108,7 +115,7 @@
 }
 .body_card .card_info p {
   letter-spacing: 1px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   font-size: 15px;
   margin-bottom: 20px;
 }

@@ -2,7 +2,7 @@ import "./Apply.css";
 
 export default function Enroll() {
   return (
-    <div className="w-full h-fit md:h-60 flex justify-center mb-10">
+    <div className="w-full h-fit md:h-fit flex justify-center mb-10">
       <div className="md:w-[80%]  w-full h-full bg-slate-100 md:bg-slate-200 rounded-lg">
         <div className="w-full flex justify-center h-10 pt-4">
           <p className="uppercase border-b-2 border-gray-500 w-44 text-center">
