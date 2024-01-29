@@ -13,7 +13,7 @@ export default function Footer() {
           {/* About */}
           <div className="w-full md:w-[30%] md:h-[10rem] bg-transparent flex justify-center flex-col">
             <h1 className="text-lg font-semibold underline mb-3">About</h1>
-            <p className="text-sm">
+            <p className="text-sm leading-7">
               Our mission is to change the way education meets the future; to
               foster interdisciplinary, integrated thinking and innovative
               leadership; to engage fully in the global community; and to
@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Products */}
           <div className="w-full md:w-[30%] md:h-[90%] bg-transparent mt-4 md:mt-0 md:ps-36">
             <p className="text-lg font-semibold underline mb-3">Services</p>
-            <ul className="text-sm">
+            <ul className="text-sm leading-7">
               <li className="cursor-pointer">Apply</li>
               <li className="cursor-pointer">Contact</li>
               <li className="cursor-pointer">Social Media</li>
@@ -34,7 +34,7 @@ export default function Footer() {
           {/* contact */}
           <div className="w-full md:w-[30%] md:h-[10rem] bg-transparent mt-10 mb-8 md:mb-0">
             <p className="text-lg font-semibold  mb-3">Address</p>
-            <ul className="ps-5 gap-1 list-disc text-sm">
+            <ul className="ps-5 gap-1 list-disc text-sm leading-7">
               <li>18 Goodfriend Drive East Hampton, NY 11937</li>
               <li> 739 Butter Lane Bridgehampton, NY 1193</li>
               <li> 18 Goodfriend Drive East Hampton, NY 11937</li>
