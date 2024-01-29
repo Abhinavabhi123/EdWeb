@@ -32,8 +32,8 @@ export default function Footer() {
           </div>
 
           {/* contact */}
-          <div className="w-full md:w-[30%] md:h-[10rem] bg-transparent mt-10 mb-8 md:mb-0">
-            <p className="text-lg font-semibold  mb-3">Address</p>
+          <div className="w-full md:w-[30%] md:h-[10rem] bg-transparent mt-2 mb-8 md:mb-0">
+            <p className="text-lg font-semibold underline mb-3">Address</p>
             <ul className="ps-5 gap-1 list-disc text-sm leading-7">
               <li>18 Goodfriend Drive East Hampton, NY 11937</li>
               <li> 739 Butter Lane Bridgehampton, NY 1193</li>

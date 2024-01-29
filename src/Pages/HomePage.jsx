@@ -12,7 +12,7 @@ import Footer from "../Components/Footer/Footer";
 export default function HomePage() {
   return (
     <div className="w-[100%] h-screen relative font-sans-condensed">
-      <div className="w-full h-[7rem] ">
+      <div className="w-full h-[5.5rem] ">
         <HeaderMain />
       </div>
       {/* Side Social media details */}
@@ -24,7 +24,7 @@ export default function HomePage() {
       </div>
       <Banner />
       <div className="w-full h-10 bg-white flex items-center ps-5 md:ps-20 mb-2">
-        <h1 className="text-2xl font-bold underline">Syllabus</h1>
+        <h1 className="text-[20px] md:text-[30px] font-bold underline">Syllabus</h1>
       </div>
       <Body />
       <Enroll />

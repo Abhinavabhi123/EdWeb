@@ -36,11 +36,10 @@ export default function Body() {
             <p>
               Where students often stay with one or two teachers for most of the
               school day, middle school is usually the first time in which
-              students change teachers after each class of usually about one
-              hour.
+              students change teachers after each class.
             </p>
             <p
-              className="w-20 text-center mt-[-10px] pt-2 rounded-md h-10 bg-text_color"
+              className="w-20 text-center mt-[-10px] pt-2 md:mt-2 rounded-md h-10 bg-text_color"
               href=""
             >
               Check
@@ -54,15 +53,15 @@ export default function Body() {
         </div>
         <img src="/Students 3.webp" alt="img3" />
         <div className="card_info">
-          <div className="inner px-3 rounded-2xl pt-2  h-[16rem] transform">
+          <div className="inner px-3 rounded-2xl md:pt-2 pt-1   h-[16rem] transform">
             <h1>High School</h1>
             <p>
               A high school is a secondary school, where teenagers are educated
               before starting college or getting jobs. Most high schools have
-              four numbered grades, from ninth to twelfth.
+              four numbered grades.
             </p>
             <p
-              className="w-20 text-center pt-2 h-10 rounded-md bg-text_color"
+              className="w-20 text-center pt-2 mt-[-10px] md:mt-3 h-10 rounded-md bg-text_color"
               href=""
             >
               Check
