@@ -83,15 +83,15 @@ export default function Event() {
             />
           </div>
           {/* image slider section */}
-          <div className="h-full w-ful bg-white flex items-center px-3 gap-3 overflow-hidden md:overflow-hidden">
+          <div className="h-full w-ful bg-white flex items-center px-3 gap-3 overflow-hidden">
             {images.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className={`w-96 h-[95%]  rounded-lg relative group `}
+                  className={`w-96 h-[95%]  rounded-lg relative`}
                 >
                   <div
-                    className={`rounded-t-lg bg-pink-500  ${
+                    className={`rounded-t-lg bg-transparent  ${
                       !expandedItems.includes(i)
                         ? "img_full block"
                         : "img_null hidden"

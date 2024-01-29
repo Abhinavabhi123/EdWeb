@@ -1,9 +1,12 @@
+import About from "../Components/About/About";
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
 import Body from "../Components/Card/Body";
 import Event from "../Components/Events/Event";
 import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
+import Videos from "../Components/Videos/Videos";
+import Form from "../Components/Form/Form";
 
 export default function HomePage() {
   return (
@@ -25,6 +28,9 @@ export default function HomePage() {
       <Body />
       <Enroll />
       <Event />
+      <Videos/>
+      <About/>
+      <Form/>
     </div>
   );
 }

@@ -90,7 +90,7 @@ export default function NavBottom() {
               <li className="nav1">Choosing the Right School</li>
               <li className="nav1">Age-Grade Placement Guide</li>
               <li className="nav1">Fees by Grade</li>
-              <li className="nav1">Choosing Option / Pathways</li>
+              <li className="nav1">Choosing Option / Pathways</li>``
               <li className="nav1">GEMS Rewards</li>
               <li className="nav1">GEMS Ambassador Programme</li>
               <li className="nav1 rounded-b-md">GEMS Alumni App</li>

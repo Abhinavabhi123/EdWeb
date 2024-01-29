@@ -11,8 +11,8 @@
 }
 .expanded {
   border-radius: 10px 10px 0 0 ;
-  /* transform: translateY(-80%); */
-  animation: expand 0.3s forwards ease-in-out;
+  transition: all 6s;
+  animation: expand 0.7s forwards ease-in;
 }
 .img_full{
   width: 100%;
@@ -20,7 +20,7 @@
 }
 .img_null{
   width: 0;
-  height: 80%;
+  height: 0;
 }
 .up_down{
   transform: rotate(180deg);
@@ -28,10 +28,11 @@
 
 @keyframes expand{
     0%{
-        height: fit-content;
+      
+        height: 0;
     }
     50%{
-      height: 50%;
+      height: 100%;
     }
     100%{
         height: 100%;
