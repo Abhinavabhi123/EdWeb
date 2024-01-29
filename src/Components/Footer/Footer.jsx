@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="w-full h-fit bg-transparent flex flex-col items-center mb-6">
         <p>Privacy Policy</p>
-        <p className="text-sm px-3 md:px-20">
+        <p className="text-xs md:text-sm ps-3 md:px-20 flex justify-center w-full">
           © [2024] ed-web. All Rights Reserved. Unauthorized copying or
           reproduction of content without explicit permission is prohibited. The
           content, design, and logos are the exclusive property of ed-web. For

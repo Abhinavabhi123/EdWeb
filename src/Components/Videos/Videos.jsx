@@ -8,19 +8,19 @@ export default function Videos() {
     },
     {
       img: "/video_img 2.jpg",
-      text: "Drawings",
-    },
-    {
-      img: "/video_img 3.jpg",
-      text: "Pared",
-    },
-    {
-      img: "/video_img 4.jpg",
       text: "Creativity",
     },
     {
-      img: "/video_img 5.jpg",
+      img: "/video_img 3.jpg",
+      text: "Drawings",
+    },
+    {
+      img: "/video_img 4.jpg",
       text: "Musical Event",
+    },
+    {
+      img: "/video_img 5.jpg",
+      text: "Pared",
     },
     {
       img: "/vidoe_img 6.jpg",
@@ -45,9 +45,7 @@ export default function Videos() {
                 className="w-[100%] h-[100%] object-cover rounded-lg image_shadow hover:scale-90 transition-transform duration-300"
               />
               <p className="absolute md:bottom-6 bottom-1 left-[50%] -translate-x-[50%] text-sm md:text-lg text-white font-semibold hidden group-hover:block transition-all duration-700 text-shadow">
-                {
-                    item?.text
-                }
+                {item?.text}
               </p>
             </div>
           );
