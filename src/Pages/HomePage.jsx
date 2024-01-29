@@ -7,6 +7,7 @@ import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 import Videos from "../Components/Videos/Videos";
 import Form from "../Components/Form/Form";
+import Footer from "../Components/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
       <Videos/>
       <About/>
       <Form/>
+      <Footer/>
     </div>
   );
 }
