@@ -3,7 +3,7 @@ import "./Body.css";
 export default function Body() {
   return (
     <div className="body_card_wrapper pb-10 md:pb-5 md:pt-[2rem]">
-      <div className="body_card mb-10 overflow-hidden w-[90%] md:w-[380px] group/item1 md:h-[20rem]">
+      <div className="body_card mb-10  overflow-hidden w-[90%] md:w-[380px] group/item1 md:h-[20rem]">
         <div className="static_text">
           <h1>Elementary </h1>
         </div>
@@ -16,9 +16,6 @@ export default function Body() {
               under elementary schooling cater to the age group of 6-13 years,
               from classes I-VIII. 
             </p>
-            {/* Secondary education is for a duration of 4
-              years and caters to the age group of 14-18 years, from classes
-              IX-XII */}
             <p
               className="w-20 text-center  md:h-20 py-2  rounded-md bg-text_color"
               href=""
@@ -42,9 +39,6 @@ export default function Body() {
               students change teachers after each class of usually about one
               hour.
             </p>
-            
-            {/*  Students often study 6 subjects. They will be taught by a
-              different teacher for each subject. */}
             <p
               className="w-20 text-center mt-[-10px] pt-2 rounded-md h-10 bg-text_color"
               href=""
@@ -67,8 +61,6 @@ export default function Body() {
               before starting college or getting jobs. Most high schools have
               four numbered grades, from ninth to twelfth.
             </p>
-            {/*  After middle school
-              or junior high comes high school. */}
             <p
               className="w-20 text-center pt-2 h-10 rounded-md bg-text_color"
               href=""

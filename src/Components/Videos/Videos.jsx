@@ -28,8 +28,8 @@ export default function Videos() {
     },
   ];
   return (
-    <div className="w-[100%] h-fi bg-transparent flex flex-col justify-center items-center mb-3 md:mb-10">
-      <div className="w-[100%] h-fit flex justify-center bg-slate-100 items-center py-4">
+    <div className="w-[100%] h-fi bg-slate-100 flex flex-col justify-center items-center mb-3 md:mb-10 mt-10 pb-7">
+      <div className="w-[100%] h-fit flex justify-center  items-center py-4">
         <h1 className="md:text-3xl font-sans-condensed ">Videos</h1>
       </div>
       <div className="w-[90%] h-full bg-transparent grid grid-rows-1 md:ps-4 ps-1 md:grid-rows-2 md:gap-10 max-[1313px]:grid-rows-3 grid-flow-col gap-4 pt-5 md:pt-3">

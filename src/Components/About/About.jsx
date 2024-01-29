@@ -68,12 +68,12 @@ export default function About() {
               a rapidly evolving global landscape.
             </p>
           </div>
-          <div className="w-[100%] h-fit px-10 mt-4">
+          <div className="w-[100%] h-fit px-10 mt-4 transition ease-in-out">
             <h4 className="text-lg font-semibold text-gray-500">
               {" "}
               Mission Statement:{" "}
             </h4>
-            <p>
+            <p className="">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our mission is to provide
               transformative educational experiences that inspire a love for
               learning, instill critical thinking skills, and equip individuals

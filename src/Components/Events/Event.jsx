@@ -66,24 +66,68 @@ export default function Event() {
         : [...prev, index]
     );
   };
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+  
+  let scrollValue=300;
+  let width="w-[78vw]";
+  let gap="gap-3";
+  let px="px-3";
+  if(windowWidth===360 && windowHeight==640 ){
+    scrollValue=286
+    px="px-0";
+    gap="gap-2"
+  }else if(windowWidth===375 && windowHeight===667){
+    width="w-[80vw]"
+    px="px-0";
+    gap="gap-1"
+    scrollValue=303
+  }else if(windowWidth===414 && windowHeight===896){
+    scrollValue=335
+  }else if(windowWidth===390 && windowHeight===844){
+    scrollValue=317
+  }else if(windowWidth===430 && windowHeight===932){
+    scrollValue=348
+  }else if(windowWidth===412 && windowHeight===915){
+    scrollValue=334;
+    width="w-[80vw]";
+    px="px-0";
+    gap="gap-2";
+  }
+  // else if(windowWidth===360 && windowHeight==740 ){
+  //   scrollValue=286;
+  //   px="px-0";
+  //   gap="gap-2";
+  // }else if(windowWidth===768 && windowHeight===1024 ){
+  //   scrollValue=286;
+  //   width="w-[20vw]";
+  // }else if(windowWidth===280 && windowHeight===653 ){
+  //   scrollValue=286;
+  //   width="w-[80vw]";
+  // }else if(windowWidth===412 && windowHeight===914 ){
+  //   scrollValue=330;
+  //   gap="gap-2";
+  //   px="px-0";
+  //   width="w-[80vw]";
+  // }
 
   function scrollRight() {
     const gridContainer = document.getElementById('gridContainer');
-    gridContainer.scrollLeft+=300;
+    gridContainer.scrollLeft+=scrollValue;
   }
   function scrollLeft(){
     const gridContainer = document.getElementById('gridContainer');
-    gridContainer.scrollLeft-=300;
+    gridContainer.scrollLeft-=scrollValue;
   }
 
 
 
   return (
-    <div className="w-full h-[25rem] bg-transparent">
+    <div className="w-full h-[25rem] bg-slate-100">
       <div className="event">
-        <p>Events</p>
+        <p className="text-xs md:text-[30px]">Events</p>
       </div>
-      <div className="w-[100%] h-[18rem] bg-slate-100 flex justify-center items-center">
+      <div className="w-[100%] h-[18rem] flex justify-center items-center">
         <div className=" w-[98%] md:w-[90%] h-[90%] bg--300 rounded-2xl flex">
           {/* Left Arrow */}
           <div className="h-full w-10 md:w-24 flex items-center justify-center">
@@ -95,12 +139,12 @@ export default function Event() {
             />
           </div>
           {/* image slider section */}
-          <div className="h-full w-full bg-white grid px-3 gap-3 grid-flow-col overflow-x-scroll scroll-smooth gridContainer pt-2" id="gridContainer">
+          <div className={`h-full w-full bg-white grid ${px} ${gap} grid-flow-col overflow-x-scroll scroll-smooth gridContainer pt-2`} id="gridContainer">
             {images.map((item, i) => {
               return (
                 <div
                   key={i}
-                  className={`md:w-72 w-[17rem] h-[15rem]  rounded-lg relative`}
+                  className={`md:w-72 ${width} h-[15rem]  rounded-lg relative`}
                 >
                   <div
                     className={`rounded-t-lg bg-transparent overflow-hidden ${
@@ -148,7 +192,7 @@ export default function Event() {
             })}
           </div>
           {/* Right Arrow */}
-          <div className="h-full w-10 md:w-24 flex items-center justify-center">
+          <div className="h-full w-10 md:w-24 flex pe-2 items-center justify-center">
             <FaCircleArrowRight
               size={30}
               color="gray"
