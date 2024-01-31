@@ -232,8 +232,8 @@ export default function EventUpdate() {
                   />
                 </div>
                 <div
-                  className={` w-full rounded-b-lg h-[20%] absolute -translate-y-[3rem] bg-[#0A1D56] text-white ${
-                    expandedItems.includes(sliderIdx) ? "expanded_mob -translate-y-0" : ""
+                  className={` w-full rounded-b-lg h-[20%] absolute bg-[#0A1D56] text-white ${
+                    expandedItems.includes(sliderIdx) ? "expanded_mob -translate-y-0" : " -translate-y-[3rem]"
                   }`}
                 >
                   <div className="h-10 w-full flex items-center justify-between px-4">
