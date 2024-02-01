@@ -31,7 +31,7 @@ const Card = (Props) => {
       };
     }, []);
   return (
-    <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-[#BFD8AF] bg-opacity-50 flex pb-5 rounded-lg">
+    <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-[#BFD8AF] bg-opacity-50 flex pb-5 rounded-lg" data-aos="fade-up">
       <div className="h-full w-[50px] bg-transparent pt-6 flex  justify-center items-start">
         <img src={img} alt="" className={`${isScrolled?"animate":""} w-8`} />
       </div>

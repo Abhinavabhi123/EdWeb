@@ -149,7 +149,7 @@ export default function EventUpdate() {
       <div className="event">
         <p className="text-[20px] md:text-[30px] text-text_color">Events</p>
       </div>
-      <div className="w-[100%] h-[18rem] flex ps-2 md:ps-0 justify-center items-center">
+      <div className="w-[100%] h-[18rem] flex ps-2 md:ps-0 justify-center items-center" data-aos="fade-up">
         <div className=" w-[98%] md:w-[90%] h-[90%] bg--300 rounded-2xl flex">
           {/* Left Arrow */}
           <div className="h-full w-10 md:w-24 flex items-center justify-center">

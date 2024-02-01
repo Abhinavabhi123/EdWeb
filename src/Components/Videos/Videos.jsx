@@ -41,7 +41,9 @@ export default function Videos() {
             <div
               className="w-[100%] h-[100%] bg-transparent relative  rounded-lg cursor-pointer group overflow-hidden"
               key={i}
+              data-aos="zoom-in-up"
             >
+
               <img
                 src={item?.img}
                 alt="video img"

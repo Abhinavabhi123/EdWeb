@@ -2,8 +2,8 @@ import "./education.css";
 
 export default function Education() {
   return (
-    <div className="w-[100%] h-fit flex justify-center items-center flex-col md:flex-row flex-wrap px-3 gap-8 md:px-20 bg-transparent my-10 ">
-      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md">
+    <div className="w-[100%] h-fit flex justify-center items-center flex-col md:flex-row flex-wrap px-3 gap-8 md:px-20 bg-transparent my-10 overflow-hidden">
+      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md"  data-aos="fade-left" >
         <img
           src="/Students 1.webp"
           alt="student img1"
@@ -25,7 +25,7 @@ export default function Education() {
           </div>
         </div>
       </div>
-      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md">
+      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md"  data-aos="fade-left">
         <img
           src="/Students 2.webp"
           alt="student img1"
@@ -47,7 +47,7 @@ export default function Education() {
           </div>
         </div>
       </div>
-      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md">
+      <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md"  data-aos="fade-left">
         <img
           src="/Students 3.webp"
           alt="student img1"
