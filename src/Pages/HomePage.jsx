@@ -1,7 +1,7 @@
 import About from "../Components/About/About";
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
-import Body from "../Components/Card/Body";
+// import Body from "../Components/Card/Body";
 // import Event from "../Components/Events/Event";
 import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
@@ -9,6 +9,7 @@ import Videos from "../Components/Videos/Videos";
 import Form from "../Components/Form/Form";
 import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
+import Education from "../Components/Card/Education";
 
 export default function HomePage() {
   return (
@@ -25,9 +26,10 @@ export default function HomePage() {
       </div>
       <Banner />
       <div className="w-full h-10 bg-white flex items-center ps-5 md:ps-20 mb-2">
-        <h1 className="text-[20px] md:text-[30px] font-bold underline">Syllabus</h1>
+        <h1 className="text-[20px] md:text-[30px] font-bold underline text-text_color">Syllabus</h1>
       </div>
-      <Body />
+      <Education/>
+      {/* <Body /> */}
       <Enroll />
       {/* <Event /> */}
       <EventUpdate/>

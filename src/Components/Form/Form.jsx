@@ -1,7 +1,7 @@
 export default function Form() {
   return (
     <div className="w-[100%] h-fit bg-slate-200 py-2 flex flex-col justify-center items-center mt-5 md:mt-10 md:pb-4 ">
-      <p className="text-lg font-serif md:text-2xl md:mb-3">
+      <p className="text-lg font-serif md:text-2xl md:mb-3 text-text_color">
         Keep Touch with Us...
       </p>
 

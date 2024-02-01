@@ -3,10 +3,16 @@ import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Event() {
   const [expandedItems, setExpandedItems] = useState([]);
+  // *______
+  const [scWidth,setScWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    setScWidth(window.innerWidth);
+    console.log(scWidth, "screenWoidth");
+  }, [scWidth,window.innerWidth]);
 
   const images = [
     {
@@ -52,10 +58,11 @@ export default function Event() {
     },
   ];
 
+  
   const toggleExpansion = (index) => {
     setExpandedItems((prev) =>
-      prev.includes(index)
-        ? prev.filter((item) => item !== index)
+    prev.includes(index)
+    ? prev.filter((item) => item !== index)
         : [...prev, index]
     );
   };
@@ -96,7 +103,7 @@ export default function Event() {
     gap="gap-2";
   }
   // else if(windowWidth===360 && windowHeight==740 ){
-  //   scrollValue=286;
+    //   scrollValue=286;
   //   px="px-0";
   //   gap="gap-2";
   // }else if(windowWidth===768 && windowHeight===1024 ){
@@ -111,7 +118,14 @@ export default function Event() {
   //   px="px-0";
   //   width="w-[80vw]";
   // }
-
+  
+  if(scWidth<=550){
+    // width=`w-${scWidth-500}px`
+    width=`w-[${scWidth-200}vw]`
+    scrollValue=scWidth-78
+    gap="gap-1";
+    px="px-0";
+  }
   function scrollRight() {
     const gridContainer = document.getElementById('gridContainer');
     gridContainer.scrollLeft+=scrollValue;
