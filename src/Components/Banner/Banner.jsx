@@ -18,7 +18,7 @@ export default function Banner() {
       } else {
         setShow(show+1);
       }
-    }, 5000);
+    }, 8000);
   }, [show]);
   return (
     <>

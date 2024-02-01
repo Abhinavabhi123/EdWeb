@@ -48,7 +48,7 @@ export default function Videos() {
                 className="w-[100%] h-[100%] object-cover rounded-lg image_shadow transition-transform duration-300"
               />
               <div className="w-full md:h-20 h-8  absolute bottom-0 flex justify-center items-center color rounded-b-lg">
-                <p className="text-white text-lg group-hover:opacity-30">
+                <p className="text-white text-lg group-hover:opacity-30 transition-all duration-500">
                   {item.text}
                 </p>
               </div>

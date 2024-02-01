@@ -5,7 +5,7 @@ export default function News() {
       {/* Date */}
       <div className="w-[90%] h-full md:w-[80%] md:h-[80%] rounded-md bg-[#D0B8A8] bg-opacity-50">
         <div className="w-full h-fit flex justify-end pe-3">
-          <p className="text-xs md:text-sm text-gray-500 mt-2">
+          <p className="text-xs md:text-sm text-gray-500 mt-2 me-2">
             <i>Date: February 1, 2024</i>
           </p>
         </div>
@@ -16,7 +16,7 @@ export default function News() {
           </h1>
           <img src="/robotics.jpg" alt="news image" className="w-96" />
           <div className="w-full h-fit pt-4 ps-2 md:px-20 md:leading-7 md:flex">
-            <p className="pe-1 md:border-r border-black">
+            <p className="pe-1 md:border-r border-black  font-serif">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               <b>In</b> an effort to foster creativity and technological
               curiosity among our students, the school recently hosted an
@@ -25,14 +25,14 @@ export default function News() {
               students across various grade levels.
             </p>
             <br />
-            <p className="ps-3 md:border-r border-black pe-1">
+            <p className="ps-3 md:border-r border-black pe-1  font-serif">
               Under the guidance of experienced robotics experts, students
               engaged in hands-on activities, learning the fundamentals of
               coding, engineering, and problem-solving. The workshop aimed to
               ignite a passion for innovation and equip students with valuable
               skills for the future.
             </p>
-            <p className="ps-3">
+            <p className="ps-3  font-serif">
               The atmosphere buzzed with excitement as teams collaborated to
               design and build their own robots. From navigating obstacle
               courses to solving real-world challenges, participants showcased
@@ -40,13 +40,13 @@ export default function News() {
             </p>
           </div>
           <div className="w-full h-fit flex flex-col items-center  ps-2 md:px-32 md:leading-7 mb-4 md:mb-10">
-            <p className="text-center">
+            <p className="text-center  font-serif">
               The school administration expressed gratitude to the guest
               instructors and emphasized the importance of such initiatives in
               preparing students for the ever-evolving landscape of technology
               and science.
             </p>
-            <p className="text-center">
+            <p className="text-center  font-serif">
               Stay tuned for more updates on our school&apos;s commitment to
               providing enriching experiences that go beyond the classroom!
             </p>

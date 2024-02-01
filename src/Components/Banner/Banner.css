@@ -10,19 +10,19 @@
 .image-animation {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  transition: transform 0.5s ease-in-out; 
-  animation: scaleImage 1s forwards ease-in-out;
+  object-fit: cover;
+  transition: transform 0.1s ease-in-out;
+  animation: scaleImage 5s forwards ease-in-out;
 }
 .image-animation1 {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  transition: transform 0.5s ease-in-out; 
-  animation: scaleImage1 1s forwards ease-in-out;
+  object-fit: cover;
+  transition: transform 0.1s ease-in-out;
+  animation: scaleImage1 5s forwards ease-in-out;
 }
 
-.banner_text{
+.banner_text {
   position: absolute;
   z-index: 10;
   font-weight: 700;
@@ -30,35 +30,43 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
   font-size: 50px;
 }
-.text_animation{
-  transition: transform 0.5s ease-in-out; 
+.text_animation {
+  transition: transform 0.5s ease-in-out;
   animation: textSlideRight 1.5s forwards ease-in-out;
 }
-.text_animation1{
-  transition: transform 0.5s ease-in-out; 
+.text_animation1 {
+  transition: transform 0.5s ease-in-out;
   animation: textSlideLeft 1.5s forwards ease-in-out;
 }
 
+/* @keyframes scaleImage {
+  0% {
+    transform: scale(1.1);
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-500px)
+    
+  }
+  50%{
+    filter: blur(2px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0px)
+  }
+} */
 @keyframes scaleImage {
   0% {
-    transform: scale(1.1);
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-500px)
-    
-  }
-  50%{
-    filter: blur(2px);
-    opacity: 0.5;
+    transform: scale(1);
   }
   100% {
-    transform: scale(0);
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0px)
+    transform: scale(1.1);
   }
 }
-@keyframes scaleImage1 {
+/* @keyframes scaleImage1 {
   0% {
     transform: scale(1.1);
     opacity: 0;
@@ -76,32 +84,40 @@
     filter: blur(0);
     transform: translateX(0px)
   }
-}
-
-@keyframes textSlideRight{
-  0%{
-    transform: translateX(500px)
+} */
+@keyframes scaleImage1 {
+  0% {
+    transform: scale(1);
   }
-  50%{
-
-  }100%{
-    transform: translateX(0px)
+  100% {
+    transform: scale(1.1);
   }
 }
 
-@keyframes textSlideLeft{
-  0%{
-    transform: translateX(-500px)
+@keyframes textSlideRight {
+  0% {
+    transform: translateX(500px);
   }
-  50%{
-
-  }100%{
-    transform: translateX(0px)
+  50% {
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
-@media screen and (max-width: 767px)  {
-  .banner_text{
+@keyframes textSlideLeft {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner_text {
     font-size: 33px;
   }
 }
