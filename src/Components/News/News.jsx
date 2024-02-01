@@ -1,9 +1,9 @@
 export default function News() {
   return (
-    <article className="w-full h-fit bg-slate-100 flex flex-col justify-center items-center py-3 pb-7">
+    <article className="w-full h-fit bg-slate-100 flex flex-col justify-center items-center py-3 pb-7 ">
       <h1 className="text-2xl font-semibold md:text-3xl md:font-serif">News</h1>
       {/* Date */}
-      <div className="w-[90%] h-full md:w-[80%] md:h-[80%] rounded-md bg-[#D0B8A8] bg-opacity-50">
+      <div className="w-[90%] h-full md:w-[80%] md:h-[80%] rounded-md bg-[#D0B8A8] bg-opacity-20">
         <div className="w-full h-fit flex justify-end pe-3">
           <p className="text-xs md:text-sm text-gray-500 mt-2 me-2">
             <i>Date: February 1, 2024</i>
@@ -15,8 +15,8 @@ export default function News() {
             Innovation
           </h1>
           <img src="/robotics.jpg" alt="news image" className="w-96" />
-          <div className="w-full h-fit pt-4 ps-2 md:px-20 md:leading-7 md:flex">
-            <p className="pe-1 md:border-r border-black  font-serif">
+          <div className="w-full h-fit pt-4 ps-2 md:px-20 md:leading-7 md:flex text-sm md:text-base">
+            <p className="pe-1 md:border-r border-black  font-serif ps-3 md:ps-0">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               <b>In</b> an effort to foster creativity and technological
               curiosity among our students, the school recently hosted an
@@ -39,7 +39,7 @@ export default function News() {
               their ingenuity and teamwork throughout the day.
             </p>
           </div>
-          <div className="w-full h-fit flex flex-col items-center  ps-2 md:px-32 md:leading-7 mb-4 md:mb-10">
+          <div className="w-full h-fit flex flex-col items-center  ps-2 md:px-32 md:leading-7 mb-4 md:mb-10  text-sm md:text-base">
             <p className="text-center  font-serif">
               The school administration expressed gratitude to the guest
               instructors and emphasized the importance of such initiatives in

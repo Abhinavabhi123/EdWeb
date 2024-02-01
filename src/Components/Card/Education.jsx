@@ -2,7 +2,7 @@ import "./education.css";
 
 export default function Education() {
   return (
-    <div className="w-[100%] h-fit flex justify-center items-center flex-col md:flex-row gap-8 px-20 bg-transparent my-10 ">
+    <div className="w-[100%] h-fit flex justify-center items-center flex-col md:flex-row flex-wrap px-3 gap-8 md:px-20 bg-transparent my-10 ">
       <div className="min-w-[20rem] md:max-w-[26rem] h-[18rem] card rounded-md">
         <img
           src="/Students 1.webp"

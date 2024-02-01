@@ -45,7 +45,7 @@ export default function About() {
   return (
     <div className="w-full h-fit bg-transparent 500 flex flex-col md:flex-row">
       {/* left side */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full ">
+      <div className="w-full md:w-1/2 h-1/2 md:h-full">
         <div className="w-[100%] h-fit bg-transparent">
           <div className="w-[100%] h-20 bg-transparent flex justify-center items-center text-2xl font-bold text-text_color">
             About Us
