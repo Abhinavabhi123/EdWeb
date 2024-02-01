@@ -31,7 +31,7 @@ const Card = (Props) => {
       };
     }, []);
   return (
-    <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-blue-200 flex pb-5 rounded-lg">
+    <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-[#BFD8AF] bg-opacity-50 flex pb-5 rounded-lg">
       <div className="h-full w-[50px] bg-transparent pt-6 flex  justify-center items-start">
         <img src={img} alt="" className={`${isScrolled?"animate":""} w-8`} />
       </div>
@@ -49,7 +49,7 @@ const Card = (Props) => {
 export default function Facility() {
     
   return (
-    <div className="w-100% md:min-h-[56rem] h-fit bg-slate-200 pb-8 mt-3">
+    <div className="w-100% md:min-h-[56rem] h-fit bg-[#E1F0DA] bg-opacity-50 pb-8 mt-3">
       <div className="w-full h-20 bg-transparent flex justify-center items-center">
         <h1 className="text-text_color text-xl md:text-3xl font-semibold">Facilities</h1>
       </div>
