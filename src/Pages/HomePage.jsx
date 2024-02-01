@@ -11,6 +11,7 @@ import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
 import Facility from "../Components/Facilities/Facility";
+import News from "../Components/News/News";
 
 export default function HomePage() {
   return (
@@ -36,6 +37,7 @@ export default function HomePage() {
       <EventUpdate/>
       <Facility/>
       <Videos/>
+      <News/>
       <About/>
       <Form/>
       <Footer/>

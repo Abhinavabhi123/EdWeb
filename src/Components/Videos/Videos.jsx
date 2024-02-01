@@ -48,12 +48,12 @@ export default function Videos() {
                 className="w-[100%] h-[100%] object-cover rounded-lg image_shadow transition-transform duration-300"
               />
               <div className="w-full md:h-20 h-8  absolute bottom-0 flex justify-center items-center color rounded-b-lg">
-                <p className="text-white text-lg group-hover:opacity-15">
+                <p className="text-white text-lg group-hover:opacity-30">
                   {item.text}
                 </p>
               </div>
               <div className="absolute w-full h-full hidden group-hover:flex rounded-lg bg-white bg-opacity-30 top-0 video justify-center items-center">
-                <div className="px-2 py-1 rounded-md bg-red-500 flex items-center gap-1">
+                <div className="px-2 py-1 rounded-md bg-[#D63484] flex  items-center gap-1">
                   <a href="#video" className="text-white text-sm md:text-base">
                     Watch Video
                   </a>
