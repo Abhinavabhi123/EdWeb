@@ -29,7 +29,7 @@ export default function HomePage() {
       <div className="w-full h-10 bg-white flex items-center ps-5 md:ps-20 mb-2">
         <h1 className="text-[20px] md:text-[30px] font-bold underline text-text_color">Syllabus</h1>
       </div>
-      {/* <Education/> */}
+      <Education/>
       {/* <Body /> */}
       <Enroll />
       {/* <Event /> */}

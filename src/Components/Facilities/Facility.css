@@ -3,7 +3,7 @@
     font-weight: 700;
     margin-bottom: 3px;
 }
-.facility_wrapper img{
+.facility_wrapper .animate{
     width:30px;
     transition: all 0.5s;
     animation: image_animation 0.6s ease-in-out 1 backwards;
@@ -13,7 +13,7 @@
     from{
         opacity: 0;
         transform: translateY(-10px);
-        transform: scale(2);
+        transform: scale(1.5);
     }
     to{
         opacity: 1;

@@ -8,13 +8,32 @@ import cookie from "/facility/cookie.png";
 import security from "/facility/security.png";
 import school from "/facility/school.png";
 import transportation from "/facility/transportation.png";
+import { useEffect, useState } from "react";
 
 const Card = (Props) => {
     const {img,title,text} =Props
+    const [isScrolled, setIsScrolled] = useState(false);
+    
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const targetScrollPosition = 1550; 
+  
+        if (scrollTop > targetScrollPosition) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
   return (
     <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-blue-200 flex pb-5 rounded-lg">
       <div className="h-full w-[50px] bg-transparent pt-6 flex  justify-center items-start">
-        <img src={img} alt="" className="" />
+        <img src={img} alt="" className={`${isScrolled?"animate":""} w-8`} />
       </div>
       <div className="h-full w-[100%] bg-transparent flex items-center  justify-center">
         <div className="bg-transparent w-[90%] h-[90%] p-4 flex flex-col items-center rounded-lg ">
@@ -28,6 +47,7 @@ const Card = (Props) => {
   );
 };
 export default function Facility() {
+    
   return (
     <div className="w-100% md:min-h-[56rem] h-fit bg-slate-200 pb-8 mt-3">
       <div className="w-full h-20 bg-transparent flex justify-center items-center">
