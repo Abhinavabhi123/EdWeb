@@ -16,7 +16,7 @@ export default function News() {
           </h1>
           <img src="/robotics.jpg" alt="news image" className="w-96" />
           <div className="w-full h-fit pt-4 ps-2 md:px-20 md:leading-7 md:flex">
-            <p className="pe-1 border-r border-black">
+            <p className="pe-1 md:border-r border-black">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
               <b>In</b> an effort to foster creativity and technological
               curiosity among our students, the school recently hosted an
@@ -25,7 +25,7 @@ export default function News() {
               students across various grade levels.
             </p>
             <br />
-            <p className="ps-3 border-r border-black pe-1">
+            <p className="ps-3 md:border-r border-black pe-1">
               Under the guidance of experienced robotics experts, students
               engaged in hands-on activities, learning the fundamentals of
               coding, engineering, and problem-solving. The workshop aimed to
@@ -46,7 +46,7 @@ export default function News() {
               preparing students for the ever-evolving landscape of technology
               and science.
             </p>
-            <p>
+            <p className="text-center">
               Stay tuned for more updates on our school&apos;s commitment to
               providing enriching experiences that go beyond the classroom!
             </p>
