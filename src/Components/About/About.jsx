@@ -258,7 +258,7 @@ export default function About() {
       {/* right side */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center px-3 ">
         {/* <div className="w- h-[90%] bg-pink-500 flex justify-center items-center"> */}
-          <img src="/2794.jpg" alt="" className="w-full h-full object-cover"/>
+          <img src="/2794.jpg" alt="" className="w-full h-full object-cover border-t-2 border-gray-600"/>
         {/* </div> */}
       </div>
     </div>

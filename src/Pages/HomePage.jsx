@@ -10,6 +10,7 @@ import Form from "../Components/Form/Form";
 import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
+import Facility from "../Components/Facilities/Facility";
 
 export default function HomePage() {
   return (
@@ -28,11 +29,12 @@ export default function HomePage() {
       <div className="w-full h-10 bg-white flex items-center ps-5 md:ps-20 mb-2">
         <h1 className="text-[20px] md:text-[30px] font-bold underline text-text_color">Syllabus</h1>
       </div>
-      <Education/>
+      {/* <Education/> */}
       {/* <Body /> */}
       <Enroll />
       {/* <Event /> */}
       <EventUpdate/>
+      <Facility/>
       <Videos/>
       <About/>
       <Form/>
