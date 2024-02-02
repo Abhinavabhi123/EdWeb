@@ -41,7 +41,7 @@ export default function News() {
         "students across various grade levels.",
     },
   ];
-  console.log(news, "news");
+
 
   return (
     <div className="w-fill md:h-[100%] h-fit bg-transparent flex items-center justify-center md:my-10 ">

@@ -1,7 +1,7 @@
 .text-card{
     width: 18rem;
     height: 15rem;
-    transition: 0.5s;
+    transition: 0.5s linear;
     border-radius: 20px;
     display: flex;
     flex-direction: column; 

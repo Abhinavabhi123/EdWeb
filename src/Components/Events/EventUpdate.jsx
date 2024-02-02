@@ -12,7 +12,6 @@ export default function EventUpdate() {
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
-    console.log(screenWidth, "screenWoidth");
   }, [screenWidth]);
 
   const images = [
