@@ -3,7 +3,7 @@ export default function AboutUpdated() {
     <section className="w-full relative h-fit flex justify-center flex-col items-center mt-32  mb-10">
       <div className="md:w-[60%] w-[80%] h-fit absolute bg-[#dfd6d1] flex-col flex justify-center  top-[-4rem] items-center md:p-8 px-4 py-2 shadow-xl shadow-black rounded-2xl">
         <h1 className="text-text_color text-2xl font-serif mb-2">About</h1>
-        <p className="text-sm md:text-base">
+        <p className="text-sm md:text-base text-center">
           {" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to ED-Web, where education
           meets innovation and excellence. At ED-Web, we are committed to

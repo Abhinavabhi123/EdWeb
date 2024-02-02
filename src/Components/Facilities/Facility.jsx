@@ -31,7 +31,7 @@ const Card = (Props) => {
       };
     }, []);
   return (
-    <div className="w-full md:min-h-[17.2rem] min-h-[10rem]  bg-[#BFD8AF] bg-opacity-50 flex pb-5 rounded-lg" data-aos="fade-up">
+    <div className="w-full md:min-h-[17.2rem] max-h-[10rem] overflow-hidden bg-[#BFD8AF] bg-opacity-50 flex pb-5 rounded-lg" data-aos="fade-up">
       <div className="h-full w-[50px] bg-transparent pt-6 flex  justify-center items-start">
         <img src={img} alt="" className={`${isScrolled?"animate":""} w-8`} />
       </div>
@@ -60,7 +60,7 @@ export default function Facility() {
           {/* section 1 */}
           <Card img={classroom} title={"State-of-the-Art Classrooms"} text={"Our school is equipped with modern, spacious classrooms that provide a comfortable and engaging learning environment. Each classroom is furnished with ergonomic seating, interactive whiteboards, and cutting-edge technology to enhance the learning experience."}/>
           {/* section 2 */}
-          <Card img={laboratory} title={"Science and Computer Labs s"} text={"Explore the wonders of science and technology in our well-equipped laboratories. Our dedicated science labs are stocked with the latest equipment and tools, fostering hands-on experimentation and scientific inquiry. Additionally, our computer labs are equipped with high-speed internet and up-to-date software, preparing students for the digital age."}/>
+          <Card img={laboratory} title={"Science and Computer Labs s"} text={"Explore the wonders of science and technology in our well-equipped laboratories. Our dedicated science labs are stocked with the latest equipment and tools, fostering hands-on experimentation and scientific inquiry. Additionally, our computer labs are equipped with high-speed internet and up-to-date software."}/>
           {/* section 3 */}
           <Card img={library} title={"Library and Resource Center"} text={"Immerse yourself in a world of knowledge at our extensive library. Our collection includes a diverse range of books, journals, and multimedia resources to support academic research and recreational reading. The library serves as a quiet and inspiring space for independent study."}/>
         </div>

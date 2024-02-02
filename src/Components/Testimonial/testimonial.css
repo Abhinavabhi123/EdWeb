@@ -1,7 +1,7 @@
 .text-card{
     width: 18rem;
     height: 15rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
     border-radius: 20px;
     display: flex;
     flex-direction: column; 
@@ -13,6 +13,7 @@
 
 .text-card:hover{
     height: 18rem;
+    transition: all 0.5s;
 }
 .text-card .imgBx{
     /* width: 250px;
@@ -20,7 +21,7 @@
     position: absolute;
     border-radius: 12px;
     top: 20px;
-    transition: 0.5s;
+    transition:all 0.5s;
     z-index: 1;
     /* background-color: white; */
 }
@@ -49,7 +50,7 @@
     top: 189px;
     overflow: hidden;
     height: 30px;
-    transition:all 0.3s;
+    transition:all 0.8s;
 }
 
 .text-card:hover .content{
