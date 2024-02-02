@@ -20,14 +20,14 @@ const Testimonial = () => {
         }
     ]
   return (
-    <section className="w-full  relative  h-fit mt-7 bg-slate-200">
+    <section className="w-full  relative  h-fit mt-7 bg-slate-200 pb-6">
       <div className="w-full text-3xl flex justify-center pt-2">
         <h1 className="text-center font-serif mt-2">
           Our Testimonials
         </h1>
       </div>
       {/* card container */}
-      <div className="card_wrapper w-full md:min-h-[33rem] h-fit bg-transparent pb-5 flex justify-center md:gap-10 items-center flex-wrap ">
+      <div className="card_wrapper w-full md:min-h-[33rem] h-fit bg-transparent pb-5 flex justify-center md:gap-10 items-center flex-wrap">
         {
             testimonials.map((item,i)=>{
                 return(
