@@ -13,6 +13,7 @@ import Education from "../Components/Card/Education";
 import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
 import AboutUpdated from "../Components/About/AboutUpdated";
+import Testimonial from "../Components/Testimonial/Testimonial";
 
 export default function HomePage() {
   return (
@@ -33,14 +34,16 @@ export default function HomePage() {
       </div>
       <Education/>
       {/* <Body /> */}
+      <AboutUpdated/>
       <Enroll />
       {/* <Event /> */}
       <EventUpdate/>
       <Facility/>
       <Videos/>
       <News/>
-      <AboutUpdated/>
+   
       {/* <About/> */}
+      <Testimonial/>
       <Form/>
       <Footer/>
     </div>
