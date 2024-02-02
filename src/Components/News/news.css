@@ -1,0 +1,22 @@
+.card_animation {
+    transition: all 1s;
+  animation: animate 3s infinite ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    /* top: -5rem;
+    right: -8rem; */
+    transform: scale(1);
+}
+50% {
+      transform: scale(1.1);
+      /* top: -8rem;
+      right: -11rem; */
+    }
+    100% {
+      transform: scale(1);
+    /* top: -5rem;
+    right: -8rem; */
+  }
+}

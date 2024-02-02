@@ -1,4 +1,4 @@
-import About from "../Components/About/About";
+// import About from "../Components/About/About";
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
 // import Body from "../Components/Card/Body";
@@ -12,6 +12,7 @@ import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
 import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
+import AboutUpdated from "../Components/About/AboutUpdated";
 
 export default function HomePage() {
   return (
@@ -38,7 +39,8 @@ export default function HomePage() {
       <Facility/>
       <Videos/>
       <News/>
-      <About/>
+      <AboutUpdated/>
+      {/* <About/> */}
       <Form/>
       <Footer/>
     </div>
