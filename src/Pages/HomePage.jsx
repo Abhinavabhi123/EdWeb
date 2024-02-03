@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { HashLoader } from "react-spinners";
 import About from "../Components/About/About";
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
@@ -6,17 +8,31 @@ import Banner from "../Components/Banner/Banner";
 import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 import Videos from "../Components/Videos/Videos";
-// import Form from "../Components/Form/Form";
 import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
 import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
-// import AboutUpdated from "../Components/About/AboutUpdated";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import ApplyForm from "../Components/Form/ApplyForm";
 
 export default function HomePage() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="w-[100%] h-screen flex justify-center items-center bg-opacity-15">
+        <HashLoader color="#041261" />
+      </div>
+    );
+  }
+
   return (
     <div className="w-[100%] h-screen relative font-sans-condensed">
       <div className="w-full h-[5.5rem] ">
@@ -30,24 +46,17 @@ export default function HomePage() {
         <FaFacebook className="hover:text-blue-500 group/face cursor-pointer" />
       </div>
       <Banner />
-      <div className="w-full h-10 bg-white flex items-center ps-5 md:ps-20 mb-2">
-        <h1 className="text-[20px] md:text-[30px] font-bold underline text-text_color">Syllabus</h1>
-      </div>
-      <Education/>
-      {/* <Body /> */}
-      <About/>
-      {/* <AboutUpdated/> */}
+      <About />
+      <Education />
       <Enroll />
       {/* <Event /> */}
-      <EventUpdate/>
-      <Facility/>
-      <Videos/>
-      <News/>
-   
-      <Testimonial/>
-      {/* <Form/> */}
-      <ApplyForm/>
-      <Footer/>
+      <EventUpdate />
+      <Facility />
+      <Videos />
+      <News />
+      <Testimonial />
+      <ApplyForm />
+      <Footer />
     </div>
   );
 }

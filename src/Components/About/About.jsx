@@ -9,8 +9,8 @@ export default function About() {
         />
       </div>
       <div className="p-2 md:pe-28">
-        <div className=" border rounded-md border-gray-500 shadow-lg  md:p-10 md:ps-24 p-10 pt-20 md:space-y-6 flex flex-col space-y-6">
-          <h1 className="text-2xl md:text-3xl text-text_color font-serif">About Us</h1>
+        <div className=" border rounded-md border-gray-500 bg-slate-100 shadow-lg  md:p-10 md:ps-24 p-10 pt-20 md:space-y-6 flex flex-col space-y-6">
+          <h1 className="text-[20px] md:text-[30px] text-text_color font-semibold underline ms-[40%] md:ms-[20%]">About Us</h1>
           <p>
             {" "}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to ED-Web, where education

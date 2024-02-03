@@ -22,7 +22,7 @@ const Testimonial = () => {
   return (
     <section className="w-full  relative  h-fit mt-7 bg-slate-200 pb-6">
       <div className="w-full text-3xl flex justify-center pt-2">
-        <h1 className="text-center font-serif mt-2">
+        <h1 className="text-center font-serif text-[20px] md:text-[30px] mt-2 underline">
           Our Testimonials
         </h1>
       </div>

@@ -37,7 +37,7 @@ export default function Banner() {
     },
   ];
   return (
-    <div className="w-[100%] md:h-[38rem] overflow-hidden h-[15rem] z-0 relative">
+    <div className="w-[100%] md:mb-5 md:h-[38rem] overflow-hidden h-[15rem] z-0 relative banner_container">
       {data.map((item, i) => {
         return (
           <div key={i} className={`${show === i + 1 ? "block" : "hidden"} w-full h-full overflow-hidden`}>
@@ -48,6 +48,7 @@ export default function Banner() {
             >
               {item?.title}
             </p>
+            <div className="gradient"></div>
             <img
              id={`img${i + 1}`}
              src={item?.img}

@@ -51,7 +51,7 @@ export default function Facility() {
   return (
     <div className="w-100% md:min-h-[56rem] h-fit bg-[#E1F0DA] bg-opacity-50 pb-8 mt-3">
       <div className="w-full h-20 bg-transparent flex justify-center items-center">
-        <h1 className="text-text_color text-xl md:text-3xl font-semibold">Facilities</h1>
+        <h1 className="text-text_color text-xl md:text-3xl font-semibold underline">Facilities</h1>
       </div>
       {/* wrapper */}
       <div className="facility_wrapper w-full h-fit bg-transparent flex  px-16 max-[760px]:px-5 max-[760px]:flex-col gap-1">
