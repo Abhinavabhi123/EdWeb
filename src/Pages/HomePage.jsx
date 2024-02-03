@@ -49,7 +49,7 @@ export default function HomePage() {
       </div>
       <Banner />
       <About />
-      {/* <Academic/> */}
+      <Academic/>
       <Education />
       <Enroll />
       {/* <Event /> */}

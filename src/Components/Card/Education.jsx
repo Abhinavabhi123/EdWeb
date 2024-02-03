@@ -26,7 +26,7 @@ const data = [
 
 export default function Education() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col my-5">
        <div className="w-full h-10 bg-white flex items-center mb-1 justify-center">
         <h1 className="text-[20px] md:text-[30px] font-bold underline text-text_color">
           Syllabus
