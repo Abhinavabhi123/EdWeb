@@ -6,7 +6,7 @@ import Banner from "../Components/Banner/Banner";
 import HeaderMain from "../Components/Header/HeaderMain";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 import Videos from "../Components/Videos/Videos";
-import Form from "../Components/Form/Form";
+// import Form from "../Components/Form/Form";
 import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
@@ -14,6 +14,7 @@ import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
 import AboutUpdated from "../Components/About/AboutUpdated";
 import Testimonial from "../Components/Testimonial/Testimonial";
+import ApplyForm from "../Components/Form/ApplyForm";
 
 export default function HomePage() {
   return (
@@ -44,7 +45,8 @@ export default function HomePage() {
    
       {/* <About/> */}
       <Testimonial/>
-      <Form/>
+      {/* <Form/> */}
+      <ApplyForm/>
       <Footer/>
     </div>
   );
