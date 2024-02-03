@@ -66,7 +66,7 @@ export default function ApplyForm() {
                 type="text"
                 name="name"
                 placeholder="Name*"
-                className={`w-full md:w-72 ps-3 py-5 bg-[#3b4b6b] outline-none text-white ${errors?.name && "border-red-500 border"}`}
+                className={`w-full md:w-72 ps-3 py-5 bg-text_color outline-none text-white ${errors?.name && "border-red-500 border"}`}
                 onChange={handleChange}
               />
               <p className="text-red-600 text-xs py-1">{errors?.name}</p>
@@ -78,7 +78,7 @@ export default function ApplyForm() {
                 maxLength={10}
                 minLength={10}
                 placeholder="Phone*"
-                className={`w-full md:w-72 ps-3 py-5 bg-[#3b4b6b] outline-none mt-3 md:mt-0 text-white ${errors?.phone && "border-red-500 border"}`}
+                className={`w-full md:w-72 ps-3 py-5 bg-text_color outline-none mt-3 md:mt-0 text-white ${errors?.phone && "border-red-500 border"}`}
                 onChange={handleChange}
               />
               <p className="text-red-600 text-xs py-1">{errors?.phone}</p>
@@ -90,7 +90,7 @@ export default function ApplyForm() {
                 type="email"
                 name="email"
                 placeholder="Email*"
-                className={`w-full md:w-72 ps-3 py-5 bg-[#3b4b6b] outline-none mt-3 md:mt-0 text-white ${errors?.email && "border-red-500 border"}`}
+                className={`w-full md:w-72 ps-3 py-5 bg-text_color outline-none mt-3 md:mt-0 text-white ${errors?.email && "border-red-500 border"}`}
                 onChange={handleChange}
               />
               <p className="text-red-600 text-xs py-1">{errors?.email}</p>
@@ -98,7 +98,7 @@ export default function ApplyForm() {
             <div>
               <select
                 name="country"
-                className={` w-full md:w-72 ps-2 py-5  bg-[#3b4b6b]  text-slate-400 outline-none mt-3 md:mt-0  ${errors?.country && "border-red-500 border"} `}
+                className={` w-full md:w-72 ps-2 py-5 text-sm bg-text_color  text-slate-400 outline-none mt-3 md:mt-0  ${errors?.country && "border-red-500 border"} `}
                 onChange={handleChange}
               >
                 <option value="" className="w-36 h-20">
@@ -112,7 +112,7 @@ export default function ApplyForm() {
           <div className="flex flex-col md:flex-row md:space-x-4 w-full md:mt-2">
             <div>
               <select
-                className={`w-full md:w-72 ps-2 py-5  bg-[#3b4b6b]  text-slate-400 outline-none mt-3 md:mt-0 ${errors?.state && "border-red-500 border"}`}
+                className={`w-full md:w-72 ps-2 py-5 text-sm bg-text_color  text-slate-400 outline-none mt-3 md:mt-0 ${errors?.state && "border-red-500 border"}`}
                 name="state"
                 onChange={(event) => {
                   handleSelectChange(event);
@@ -138,10 +138,10 @@ export default function ApplyForm() {
             <div className="flex-wrap">
               <select
                 name="city"
-                className={`w-full md:w-72 ps-2 py-5 bg-[#3b4b6b] text-slate-400 outline-none mt-3 md:mt-0  pr-10 ${errors?.city && "border-red-500 border"}`}
+                className={`w-full md:w-72 ps-2 py-5 text-sm bg-text_color text-slate-400 outline-none mt-3 md:mt-0  pr-10 ${errors?.city && "border-red-500 border"}`}
                 onChange={handleChange}
               >
-                <option value='' className="w-36">Please Select City</option>
+                <option value='' className="w-6 md:w-36">Please Select City</option>
                 {cities.map((item, i) => {
                   return (
                     <option key={i} value={item?.name}>

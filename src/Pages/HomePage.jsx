@@ -1,4 +1,4 @@
-// import About from "../Components/About/About";
+import About from "../Components/About/About";
 import Enroll from "../Components/Apply/Enroll";
 import Banner from "../Components/Banner/Banner";
 // import Body from "../Components/Card/Body";
@@ -12,7 +12,7 @@ import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
 import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
-import AboutUpdated from "../Components/About/AboutUpdated";
+// import AboutUpdated from "../Components/About/AboutUpdated";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import ApplyForm from "../Components/Form/ApplyForm";
 
@@ -35,7 +35,8 @@ export default function HomePage() {
       </div>
       <Education/>
       {/* <Body /> */}
-      <AboutUpdated/>
+      <About/>
+      {/* <AboutUpdated/> */}
       <Enroll />
       {/* <Event /> */}
       <EventUpdate/>
@@ -43,7 +44,6 @@ export default function HomePage() {
       <Videos/>
       <News/>
    
-      {/* <About/> */}
       <Testimonial/>
       {/* <Form/> */}
       <ApplyForm/>

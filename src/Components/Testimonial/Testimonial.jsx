@@ -27,11 +27,11 @@ const Testimonial = () => {
         </h1>
       </div>
       {/* card container */}
-      <div className="card_wrapper w-full md:min-h-[33rem] h-fit bg-transparent pb-5 flex justify-center md:gap-10 items-center flex-wrap">
+      <div className="card_wrapper w-full overflow-hidden md:min-h-[33rem] h-fit bg-transparent pb-5 flex justify-center md:gap-10 items-center flex-wrap">
         {
             testimonials.map((item,i)=>{
                 return(
-                    <div key={i} className=" text-card mt-20 md:mt-0 bg-white"data-aos="fade-left">
+                    <div key={i} className=" text-card mt-20 md:mt-0 bg-white" data-aos="fade-left">
                     <div className="imgBx w-56 h-10">
                       <img
                         src={item?.img}

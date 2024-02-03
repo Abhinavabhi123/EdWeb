@@ -65,7 +65,7 @@ export default function Facility() {
           <Card img={library} title={"Library and Resource Center"} text={"Immerse yourself in a world of knowledge at our extensive library. Our collection includes a diverse range of books, journals, and multimedia resources to support academic research and recreational reading. The library serves as a quiet and inspiring space for independent study."}/>
         </div>
         {/* center section */}
-        <div className="w-1/3 max-[760px]:w-full h-full bg-transparent flex flex-col border-l-2 border-r-2 gap-1">
+        <div className="w-1/3 max-[760px]:w-full h-full bg-transparent flex flex-col  gap-1">
           {/* section 1 */}
           <Card img={sports} title={"Sports and Fitness Facilities"} text={"Promoting a healthy and active lifestyle, our school offers top-notch sports and fitness facilities. From well-maintained sports fields to indoor fitness areas, students have the opportunity to participate in various physical activities, promoting teamwork and well-being."} />
           {/* section 2 */}
