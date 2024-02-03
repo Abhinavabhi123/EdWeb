@@ -11,10 +11,12 @@ import Videos from "../Components/Videos/Videos";
 import Footer from "../Components/Footer/Footer";
 import EventUpdate from "../Components/Events/EventUpdate";
 import Education from "../Components/Card/Education";
-import Facility from "../Components/Facilities/Facility";
+// import Facility from "../Components/Facilities/Facility";
 import News from "../Components/News/News";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import ApplyForm from "../Components/Form/ApplyForm";
+import Academic from "../Components/Academic/Academic";
+import Facilities from "../Components/Facilities/Facilities";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -47,11 +49,13 @@ export default function HomePage() {
       </div>
       <Banner />
       <About />
+      {/* <Academic/> */}
       <Education />
       <Enroll />
       {/* <Event /> */}
       <EventUpdate />
-      <Facility />
+      <Facilities/>
+      {/* <Facility /> */}
       <Videos />
       <News />
       <Testimonial />

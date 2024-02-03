@@ -31,7 +31,7 @@ const Testimonial = () => {
         {
             testimonials.map((item,i)=>{
                 return(
-                    <div key={i} className=" text-card mt-20 md:mt-0 bg-white" data-aos="fade-left">
+                    <div key={i} className=" text-card mt-20 md:mt-0 bg-white" data-aos="fade-left" >
                     <div className="imgBx w-56 h-10">
                       <img
                         src={item?.img}
