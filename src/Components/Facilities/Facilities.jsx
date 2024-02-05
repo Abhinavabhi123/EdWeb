@@ -73,8 +73,8 @@ export default function Facilities() {
           playground, sports fields, and indoor sports amenities.
         </p>
       </div>
-      <div className="w-full flex flex-col py-4 bg-slate-100 ps-4 rounded-md mt-2">
-        {data?.map((item, i) => {
+      <div className="w-full flex py-4 bg-slate-100 justify-between px-4 items-center ps-4 rounded-md mt-2 max-[1023px]:flex-col max-[1023px]:items-start">
+        {/* {data?.map((item, i) => {
           return (
             <div
               key={i}
@@ -84,7 +84,63 @@ export default function Facilities() {
               <p className="text-sm md:text-base pb-3 bg-red-00">{item?.text}</p>
             </div>
           );
-        })}
+        })} */}
+        <div>
+          <div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[0]?.img} alt={data[0]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[0]?.text}
+            </p>
+          </div>
+          <div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[1]?.img} alt={data[1]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[1]?.text}
+            </p>
+          </div>
+          <div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[2]?.img} alt={data[2]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[2]?.text}
+            </p>
+          </div>
+        </div>
+        <div>
+        <div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[3]?.img} alt={data[3]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[3]?.text}
+            </p>
+          </div><div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[4]?.img} alt={data[4]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[4]?.text}
+            </p>
+          </div><div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[5]?.img} alt={data[5]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[5]?.text}
+            </p>
+          </div>
+        </div>
+        <div>
+        <div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[6]?.img} alt={data[6]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[6]?.text}
+            </p>
+          </div><div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[7]?.img} alt={data[7]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[7]?.text}
+            </p>
+          </div><div className="flex justify-start items-center space-x-2 space-y-2 ">
+            <img src={data[8]?.img} alt={data[8]?.img} className="w-6" />
+            <p className="text-sm md:text-base pb-3 bg-red-00">
+              {data[8]?.text}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

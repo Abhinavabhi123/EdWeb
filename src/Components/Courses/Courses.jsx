@@ -6,7 +6,7 @@ import "./Courses.css";
 export default function Courses() {
   const data = [
     {
-      title: "Learning Education",
+      title: "Learners Educated",
       count: 2563,
       icon: "/Course 1.png",
     },
