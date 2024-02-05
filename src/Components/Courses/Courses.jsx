@@ -44,7 +44,7 @@ export default function Courses() {
         your academic journey be a masterpiece of purpose and achievement.
       </div>
       <div className="show_div"></div>
-      <div className="counter">
+      <div className="counter overflow-hidden">
         {data.map((item, index) => (
           <div key={index} className="counter_div" data-aos="fade-left">
             <img src={item?.icon} alt="card icon" />
@@ -52,11 +52,14 @@ export default function Courses() {
               onEnter={() => setView(true)}
               onExit={() => setView(false)}
             >
-              <h2 className="font-bold">
-              {view && (
+              <h1 className="font-bold text-2xl transition-all duration-1000">
+              {view ? (
                 <CountUp start={0} end={item?.count} duration={3} delay={0} />
+                ):
+                (
+                  <h2 className="text-2xl font-bold">{item?.count}</h2>
                 )}
-                </h2>
+                </h1>
             </ScrollTrigger>
             <p>{item.title}</p>
           </div>
