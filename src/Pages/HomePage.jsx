@@ -54,10 +54,8 @@ export default function HomePage() {
       <Education />
       <Courses/>
       <Enroll />
-      {/* <Event /> */}
       <EventUpdate />
       <Facilities/>
-      {/* <Facility /> */}
       <Videos />
       <News />
       <Testimonial />
