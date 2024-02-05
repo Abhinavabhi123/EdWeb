@@ -17,6 +17,7 @@ import Testimonial from "../Components/Testimonial/Testimonial";
 import ApplyForm from "../Components/Form/ApplyForm";
 import Academic from "../Components/Academic/Academic";
 import Facilities from "../Components/Facilities/Facilities";
+import Courses from "../Components/Courses/Courses";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +52,7 @@ export default function HomePage() {
       <About />
       <Academic/>
       <Education />
+      <Courses/>
       <Enroll />
       {/* <Event /> */}
       <EventUpdate />
