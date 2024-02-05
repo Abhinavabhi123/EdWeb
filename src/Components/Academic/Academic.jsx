@@ -59,8 +59,8 @@ export default function Academic() {
             <div className="w-full md:w-1/2 px-6">
               <p className="transition-all duration-500">{data[view]?.content}</p>
               <div className="flex w-full justify-end pe-4 my-4">
-                <a className="px-3 py-2 bg-text_color rounded-md flex items-center transition-all duration-1000 gap-2 group text-white cursor-pointer"> Read More
-                <FaArrowRightLong className="hidden group-hover:block" />
+                <a className="px-3 py-2 bg-text_color rounded-md flex items-center  gap-2 group text-white cursor-pointer"> Read More
+                <FaArrowRightLong className="hidden group-hover:block transition-all duration-[3s] ease-in-out" />
                  </a>
               </div>
             </div>

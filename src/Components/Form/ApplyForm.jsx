@@ -73,7 +73,7 @@ export default function ApplyForm() {
             </div>
             <div>
               <input
-                type="text"
+                type="number"
                 name="phone"
                 maxLength={10}
                 minLength={10}
