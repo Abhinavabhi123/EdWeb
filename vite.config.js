@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-scroll-trigger','react-countup'],
+      external: ['./react-scroll-trigger','./react-countup'],
     },
   },
 })
