@@ -63,9 +63,9 @@ export default function Facility() {
           facilitate comprehensive learning experiences.
         </p>
       </div>
-      <div className="w-full min-h-[30rem] bg-transparent flex justify-center items-center">
-        <div className="w-full min-h-[30rem] bg-transparent flex justify-center items-center">
-          <div className="w-[80%] h-[90%] bg-transparent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[1280px]:pt-8 pb-8">
+      <div className="w-full h-fut bg-transparent flex justify-center items-center">
+        <div className="w-full h-fit bg-transparent flex justify-center items-center">
+          <div className="w-[80%] h-[90%] bg-transparent grid py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-[1280px]:pt-8 pb-8">
             {data.map((item, i) => {
               return (
                 <div key={i} className="cards py-3 px-1 gap-2 m-auto"  data-aos="fade-left">
