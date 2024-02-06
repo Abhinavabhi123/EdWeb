@@ -56,7 +56,7 @@ export default function Education() {
                     <h2>{item?.title}</h2>
                   </div>
                 </div>
-                <div className="w-full h-[75%] bg-transparent p-8">
+                <div className="w-full h-[75%] bg-transparent px-8">
                   <p className="text-white ">{item?.content}</p>
                   <button className="py-2 px-5 bg-[#00bfff] mt-2 md:mt-4 rounded-md text-white">
                     Click

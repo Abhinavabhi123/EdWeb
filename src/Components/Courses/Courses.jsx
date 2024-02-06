@@ -50,7 +50,7 @@ export default function Courses() {
             <img src={item?.icon} alt="card icon" />
             <ScrollTrigger
               onEnter={() => setView(true)}
-              onExit={() => setView(false)}
+              // onExit={() => setView(false)}
             >
               <h1 className="font-bold text-2xl transition-all duration-1000">
               {view ? (
