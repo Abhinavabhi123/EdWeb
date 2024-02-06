@@ -1,71 +1,165 @@
-import "./academic";
+import "./academic.css";
 
 export default function Academics() {
   const data = [
     {
-      title: "Lower School - K-4",
-      content:
-        "Offering a classroom experience that is second to none, the values your child learns at home are reinforced at Wesleyan as we connect students with the best Christian educators and resources in Atlanta. Each child is known, encouraged, loved, and challenged within the appropriate developmental framework. This is part of our commitment to meet the academic, social, emotional, spiritual, and physical needs of our students.",
-      img: "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/995/link/large_link654660_144957.jpg",
+      name: "John Doe - 98.5%",
+      img: "/grade 1.jpg",
     },
     {
-      title: "Middle School - 5-8",
-      content:
-        "Middle school is a time for students to explore new opportunities that are crucial to their development. Our campus, courses, and extracurricular activities are designed to help each child navigate their strengths, interests, and passions in an encouraging and supportive setting during these formative years.",
-      img: "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/995/link/large_link654661_144958.jpg",
+      name: "Jane Smith - 97.8%",
+      img: "/grade 2.jpg",
     },
     {
-      title: " High School - 9-12",
-      content:
-        "The high school seeks to be a community of joy, where faculty and students share in the learning process, and where character, stewardship, and scholarship are held in high esteem. Encouraging students to be independent thinkers, faculty members are committed to instilling in students a love of learning and a concern for others by stressing the values of honesty, integrity, and personal responsibility. Ultimately, Wesleyan challenges and nurtures students to grow into responsible citizens prepared to lead and serve in an ever-changing world.",
-      img: "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/995/link/large_link654662_144959.jpg",
+      name: "Michael Johnson - 97.5%",
+      img: "/grade 3.jpg",
+    },
+  ];
+  const subjectWise = [
+    {
+      subject: "Mathematics",
+      img: "/grade 4.jpg",
+      name: "Ava Smith",
+    },
+    {
+      subject: "Science",
+      img: "/grade 5.jpg",
+      name: "Liam Johnson",
+    },
+    {
+      subject: "English",
+      img: "/grade 6.jpg",
+      name: "Sophia Williams",
+    },
+    {
+      subject: "History",
+      img: "/grade 7.jpg",
+      name: "Noah Brown",
     },
   ];
 
-  return (
-    <div className="w-full h-fit bg-slate-100 pb-5 overflow-hidden">
-      <div className="flex justify-center pt-5">
-        <h1 className="text-2xl font-semibold underline">Academic Result</h1>
-      </div>
-      <div className="w-full h-fit relative bg-transparent flex flex-col justify-center items-center md:flex-row md:px-20 p-10 border-b border-black md:border-none"  data-aos="fade-left">
-        <div className="md:w-1/2 flex flex-col justify-center items-center">
-          <div className="py-2">
-            <h1 className="text-lg font-semibold">{data[0]?.title}</h1>
-          </div>
-          <div>
-            <p>{data[0]?.content}</p>
-          </div>
-        </div>
-        <div className="flex justify-center items-center md:w-1/2 mt-4 md:mt-0">
-          <img src={data[0]?.img} alt="image" className="w-96" />
-        </div>
-      </div>
+  const plusTwoData = [
+    {
+      img: "/grade 8.jpg",
+      name: "Emily Davis - 97.2%",
+    },
+    {
+      img: "/grade 9.jpg",
+      name: "David Wilson - 96.5%",
+    },
+    {
+      img: "/grade 10.jpg",
+      name: "Sarah Brown - 96.2%",
+    },
+  ];
   
-      <div className="w-full h-fit relative bg-transparent flex flex-col justify-center items-center md:flex-row md:px-20  p-10 border-b border-black  md:border-none" data-aos="fade-right">
-        <div className="flex justify-center items-center md:w-1/2">
-          <img src={data[1]?.img} alt="image" className="w-96" />
+
+
+
+  return (
+    <div className="w-full min-h-[40rem] academic_card py-5 px-10">
+      <div className="flex justify-center">
+        <h1 className="text-2xl underline font-semibold">Academic Results</h1>
+      </div>
+      {/*  */}
+      <div className="flex justify-center items-center gap-2 py-4">
+        <h2 className="font-semibold">Grade 10 Results (2023-2024)</h2>
+        <img src="/crown.png" alt="crown image" className="w-14" />
+      </div>
+      {/* topper div */}
+      <div>
+        <div className="flex justify-start md:ps-40 py-4">
+          <h3 className="font-semibold">Overall Pass Percentage: 98%</h3>
         </div>
-        <div className="md:w-1/2 flex flex-col justify-center items-center mt-2 md:mt-0">
-          <div className="py-2">
-            <h1 className="text-lg font-semibold">{data[1]?.title}</h1>
-          </div>
-          <div>
-            <p>{data[1]?.content}</p>
+        <div className="flex flex-wrap h-fit justify-center items-center gap-0 max-[768px]:gap-10 md:gap-20  md:p-10">
+          {data?.map((item, i) => {
+            return (
+              <div
+                key={i}
+                className="w-[15rem] h-[18rem] bg-transparent flex justify-center flex-col items-center gap-3"
+                data-aos="zoom-in"
+              >
+                <div className="w-40 h-40 rounded-full">
+                  <img
+                    src={item?.img}
+                    alt="image"
+                    className=" rounded-full object-cover w-full h-full"
+                  />
+                </div>
+
+                <p className="flex justify-center items-center gap-2">{item?.name} <img src="/crown.png" alt="crown image" className="w-6" /></p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/*  */}
+
+      <div className="flex flex-col">
+        <div className="flex justify-start md:ps-40 py-4">
+          <h3 className="font-semibold">Subject-wise Performance:</h3>
+        </div>
+        <div className="flex justify-center items-center">
+          <div className="max-[768px]:w-[85%] w-full bg-transparent max-[496px]:p-14 flex items-center justify-center flex-col md:flex-row flex-wrap gap-8">
+            {subjectWise.map((item, i) => {
+              return (
+                <div
+                  key={i}
+                  className="w-[15rem] h-[18rem] bg-transparent flex justify-center flex-col  items-center md:gap-3"
+                  data-aos="zoom-in"
+                >
+                  <p className="text-center w-full md:h-10">{item?.subject}</p>
+                  <div className="w-full h-[17rem] bg-slate-200 rounded-lg flex flex-col justify-center gap-3 items-center">
+                    <div className="w-40 h-40 rounded-full">
+                      <img
+                        src={item?.img}
+                        alt="image"
+                        className="rounded-full w-full h-full"
+                      />
+                    </div>
+                    <p className="w-full text-center">{item?.name}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-      <div className="w-full h-fit relative bg-transparent flex flex-col justify-center items-center md:flex-row md:px-20  p-10 border-b" data-aos="fade-left">
-        <div className="md:w-1/2 flex flex-col justify-center items-center">
-          <div className="py-2">
-            <h1 className="text-lg font-semibold">{data[2]?.title}</h1>
-          </div>
-          <div>
-            <p>{data[2]?.content}</p>
+      {/*  */}
+      <div className="w-full flex flex-col mt-5">
+        <div className="flex justify-center items-center gap-2 py-4">
+        <h2 className="font-semibold">Grade 12 Results (2023-2024)</h2>
+        <img src="/crown.png" alt="crown image" className="w-14" />
+      </div>
+        <div className="w-full bg-transparent flex justify-center items-center">
+          <div className="max-[768px]:w-[85%] w-full bg-transparent max-[496px]:p-14 flex items-center justify-center flex-col md:flex-row flex-wrap md:gap-20">
+            {plusTwoData.map((item, i) => {
+              return (
+                <div
+                  key={i}
+                  className="w-[15rem] h-[18rem] bg-transparent flex justify-center flex-col  items-center md:gap-3"
+                  data-aos="zoom-in"  
+                >
+                  <p className="text-center w-full md:h-10">{item?.subject}</p>
+                  <div className="w-full h-[17rem] bg-slate-200 rounded-lg flex flex-col justify-center gap-3 items-center">
+                    <div className="w-40 h-40 rounded-full">
+                      <img
+                        src={item?.img}
+                        alt="image"
+                        className="rounded-full w-full h-full"
+                      />
+                    </div>
+                    <p className="w-full text-center">{item?.name}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="flex justify-center items-center md:w-1/2 mt-4 md:mt-0">
-          <img src={data[2]?.img} alt="image" className="w-96" />
-        </div>
+      </div>
+
+      <div className="w-full flex justify-center items-center py-4 mt-5">
+        <button className="px-5 py-3 font-semibold bg-[#c89734] rounded-lg group/btn"><a className="group-hover/btn:underline transition-all duration-500">Know More</a></button>
       </div>
     </div>
   );
