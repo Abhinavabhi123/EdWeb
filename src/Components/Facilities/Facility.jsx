@@ -48,7 +48,7 @@ export default function Facility() {
   return (
     <div className=" facility_main">
       <div>
-        <h2 className="mt-6 text-white relative text-2xl font-serif">
+        <h2 className="my-6 text-white relative text-2xl font-serif underline">
           Facilities
         </h2>
       </div>
