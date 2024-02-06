@@ -23,7 +23,7 @@ export default function Academics() {
   ];
 
   return (
-    <div className="w-full h-fit bg-slate-100 pb-5">
+    <div className="w-full h-fit bg-slate-100 pb-5 overflow-hidden">
       <div className="flex justify-center pt-5">
         <h1 className="text-2xl font-semibold underline">Academic Result</h1>
       </div>
