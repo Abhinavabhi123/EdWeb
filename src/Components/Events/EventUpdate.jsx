@@ -139,16 +139,44 @@ export default function EventUpdate() {
       setSliderIdx(sliderIdx - 1);
     }
   }
-  if(screenWidth<=550){
-    width=`${screenWidth-500}px`
+  if (screenWidth <= 550) {
+    width = `${screenWidth - 500}px`;
   }
+
+  useEffect(() => {
+    if (screenWidth >= 550) {
+      const gridContainer = document.getElementById("gridContainer");
+
+      const timer = setInterval(() => {
+        if (gridContainer.scrollWidth > gridContainer.clientWidth) {
+          if (gridContainer.scrollLeft >= 293) {
+            gridContainer.scrollLeft = 0;
+          } else {
+            gridContainer.scrollLeft += scrollValue;
+          }
+        }
+      }, 5000);
+
+      return () => clearInterval(timer);
+    }else{
+      const timer = setInterval(()=>{
+        setSliderIdx((prevIdx) => (prevIdx + 1) % images.length);
+      },5000)
+      return()=>clearInterval(timer)
+    }
+  }, [scrollValue]);
 
   return (
     <div className="w-full h-fit bg-slate-100">
       <div className="event">
-        <p className="text-[20px] md:text-[30px] text-text_color underline">Events</p>
+        <p className="text-[20px] md:text-[30px] text-text_color underline">
+          Events
+        </p>
       </div>
-      <div className="w-[100%] h-[18rem] flex ps-2 md:ps-0 justify-center items-center" data-aos="fade-up">
+      <div
+        className="w-[100%] h-[18rem] flex ps-2 md:ps-0 justify-center items-center"
+        data-aos="fade-up"
+      >
         <div className=" w-[98%] md:w-[90%] h-[90%] bg--300 rounded-2xl flex">
           {/* Left Arrow */}
           <div className="h-full w-10 md:w-24 flex items-center justify-center">
@@ -161,7 +189,9 @@ export default function EventUpdate() {
           </div>
           {/* image slider section */}
           <div
-            className={`h-full w-full bg-white grid ${sliderIdx<=550&&"px-0"} ${px} ${gap} grid-flow-col overflow-x-scroll scroll-smooth gridContainer pt-2`}
+            className={`h-full w-full bg-white grid ${
+              sliderIdx <= 550 && "px-0"
+            } ${px} ${gap} grid-flow-col overflow-x-scroll scroll-smooth gridContainer pt-2`}
             id="gridContainer"
           >
             {screenWidth >= 550 ? (
@@ -223,7 +253,8 @@ export default function EventUpdate() {
                     !expandedItems.includes(sliderIdx)
                       ? "img_full block"
                       : "img_null hidden"
-                  }`}>
+                  }`}
+                >
                   <img
                     src={images[sliderIdx]?.img}
                     alt="image"
@@ -232,7 +263,9 @@ export default function EventUpdate() {
                 </div>
                 <div
                   className={` w-full rounded-b-lg h-[20%] absolute bg-[#0A1D56] text-white ${
-                    expandedItems.includes(sliderIdx) ? "expanded_mob -translate-y-0" : " -translate-y-[3rem]"
+                    expandedItems.includes(sliderIdx)
+                      ? "expanded_mob -translate-y-0"
+                      : " -translate-y-[3rem]"
                   }`}
                 >
                   <div className="h-10 w-full flex items-center justify-between px-4">
@@ -253,8 +286,8 @@ export default function EventUpdate() {
                   </div>
                   <div
                     className={`${
-                        expandedItems.includes(sliderIdx) ? "block" : "hidden"
-                      } px-2 text-xs overflow-hidden`}
+                      expandedItems.includes(sliderIdx) ? "block" : "hidden"
+                    } px-2 text-xs overflow-hidden`}
                   >
                     {images[sliderIdx]?.desc}
                   </div>

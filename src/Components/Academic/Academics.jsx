@@ -71,12 +71,12 @@ export default function Academics() {
         <div className="flex md:justify-start justify-center md:ps-40 py-4">
           <h3 className="font-semibold text-sm md:text-base" >Overall Pass Percentage: 98%</h3>
         </div>
-        <div className="flex flex-wrap  h-fit justify-center items-center gap-0 max-[768px]:gap-10 md:gap-20  ">
+        <div className="flex flex-wrap  h-fit justify-center items-center gap-0 md:gap-20 ">
           {data?.map((item, i) => {
             return (
               <div
                 key={i}
-                className="w-[15rem] h-[15rem] bg-transparent  flex justify-center  flex-col items-center gap-3"
+                className="w-[15rem] h-[15rem] bg-transparent flex justify-center  flex-col items-center gap-3"
                 data-aos="zoom-in"
               >
                 <div className="w-40 h-40 rounded-full">
@@ -100,7 +100,8 @@ export default function Academics() {
           <h3 className="font-semibold">Subject-wise Performance:</h3>
         </div>
         <div className="flex justify-center items-center">
-          <div className="max-[768px]:w-[85%] w-full bg-transparent max-[496px]:p-14 flex items-center  justify-center flex-col md:flex-row gap-8">
+          <div className="max-[768px]:w-[85%] w-full bg-transparent  flex items-center  justify-center flex-col md:flex-row gap-8">
+          {/* max-[496px]:p-14 */}
             {subjectWise.map((item, i) => {
               return (
                 <div
