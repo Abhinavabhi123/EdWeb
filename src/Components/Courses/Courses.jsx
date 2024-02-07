@@ -52,14 +52,13 @@ export default function Courses() {
               onEnter={() => setView(true)}
               // onExit={() => setView(false)}
             >
-              <h1 className="font-bold text-2xl transition-all duration-1000">
               {view ? (
-                <CountUp start={0} end={item?.count} duration={3} delay={0} />
-                ):
-                (
-                  <h2 className="text-2xl font-bold">{item?.count}</h2>
-                )}
+                <h1 className="font-bold text-2xl transition-all duration-1000">
+                  <CountUp start={0} end={item?.count} duration={3} delay={0} />
                 </h1>
+              ) : (
+                <h2 className="text-2xl font-bold">{item?.count}</h2>
+              )}
             </ScrollTrigger>
             <p>{item.title}</p>
           </div>
