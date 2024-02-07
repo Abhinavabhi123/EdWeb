@@ -22,7 +22,7 @@ import Academics from "../../Components/Academic/Academics";
 export default function HomePage() {
 
   return (
-    <div className="w-[100%] h-screen relative font-sans-condensed">
+    <div className="w-[100%] h-fit relative font-sans-condensed">
 
       {/* Side Social media details */}
       <div className="h-28 md:h-40 w-10 fixed z-[10] bg-yellow-500 bg-opacity-50 hover:bg-opacity-90 rounded-tr-lg rounded-br-lg mt-11 md:mt-44 md:text-2xl text-sm flex flex-col justify-center gap-2 items-center m-0 p-0">
