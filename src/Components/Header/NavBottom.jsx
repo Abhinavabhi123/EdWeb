@@ -1,26 +1,26 @@
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 export default function NavBottom() {
+  const navigate = useNavigate()
   return (
     <div className="w-[100%] h-[50%] bg-transparent max-[1290px]:hidden">
       <nav className="w-full h-full flex justify-end items-center">
         <ul className="flex justify-end items-center w-full h-full text-lg font-semibold gap-10 pt-3 pe-2  text-text_color">
-          <li className="navList group relative">
-            We Are GEMS
+          <li className="navList group relative"
+          onClick={()=>navigate("/about_us")}>
+            About Us
             <ul className=" w-72 h-fit nav_animate z-50 absolute bg-white left-0 top-[2.4rem] border shadow-md rounded-md hidden group-hover:block hover:block">
-              <li className="nav1 rounded-t-md">Message From Our Founder</li>
+              <li className="nav1 rounded-t-md">School Mission and Vision</li>
               <li className="nav1">Missions & Values</li>
-              <li className="nav1">Over 16 Years of Legacy</li>
-              <li className="nav1">Our Company</li>
-              <li className="nav1">Our Leadership</li>  
+              <li className="nav1">Faculty and Staff</li>
+              <li className="nav1">Facilities</li>
+              <li className="nav1">Testimonials and Success Stories</li>  
               <li className="nav1">Our Accreditation and Affiliation</li>
               <li className="nav1">Social Responsibility</li>
-              <li className="nav1">Our Partners</li>
-              <li className="nav1">Investor Relation</li>
-              <li className="nav1 rounded-b-md">Career at GEMS</li>
             </ul>
           </li>
           <li className="navList group relative">
-            Our Promise
+           Courses
             <ul className="w-72 nav_animate h-fit z-50 absolute bg-white top-[2.4rem] left-0 hidden border shadow-md rounded-md group-hover:block group-hover/suite:block">
               <li className="nav1 rounded-t-md">The GEMS Difference</li>
               <li className="nav1">Great Teachers</li>
@@ -41,7 +41,7 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList group relative">
-            Our Schools
+            Academics
             <ul className=" w-72 nav_animate h-fit z-50 absolute bg-white top-[2.2em] left-0 hidden group-hover:block group-hover/our:block shadow-md border rounded-md ">
               <li className="nav1 relative flex justify-between pe-2 items-center group/our rounded-t-md">
                 Schools by Curriculum
@@ -69,14 +69,14 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList relative group">
-            Our Students
+            Students Life
             <ul className=" nav_animate w-72 h-fit z-50 absolute bg-white left-0 top-[2.44rem] rounded-md shadow-md border hidden group-hover:block">
               <li className="nav1 rounded-t-md">Our Alumni - where are tye now ?</li>
               <li className="nav1 rounded-b-md">Student Experiences</li>
             </ul>
           </li>
           <li className="navList  relative group">
-            News & Events
+            Admission
             <ul className="w-72 nav_animate h-fit z-50 absolute bg-white left-0 top-[2.45rem] rounded-md shadow-md border hidden group-hover:block">
               <li className="nav1 rounded-t-md">News</li>
               <li className="nav1">GEMS Education Blogs</li>
@@ -84,7 +84,7 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList relative group">
-            For Parents
+           Contact Us
             <ul className="w-72 nav_animate h-fit z-50 absolute top-[2.4rem] bg-white rounded-md border shadow-md hidden group-hover:block">
               <li className="nav1 rounded-t-md">School of Thought: Podcast</li>
               <li className="nav1">Choosing the Right School</li>

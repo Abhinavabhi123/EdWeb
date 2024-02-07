@@ -5,9 +5,11 @@ import NavDetails from "./NavDetails";
 import NavBottom from "./NavBottom";
 import "./Header.css";
 import MenuOpen from "./MenuOpen";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderMain() {
   // const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false);
   if(menuOpen){
     window.scrollTo(0, 0);
@@ -20,7 +22,7 @@ export default function HeaderMain() {
     <>
       <div className="w-[100%] h-[7rem] fixed bg-white pb-3 max-[1290px]:h-[5.5rem] flex items-center justify-between px-2 shadow-md min-[1207px]:px-[15%] z-40 ">
         <div className="w-fit h-full flex items-end">
-          <img src="/logo.svg" alt="logo" className="w-24 md:w-28 h-auto cursor-pointer" />
+          <img src="/logo.svg" alt="logo" className="w-24 md:w-28 h-auto cursor-pointer" onClick={()=>navigate("/")} />
         </div>
         <div className="w-[90%] h-full bg-transparent flex flex-col items-end justify-center">
           <div className="w-[100%] h-[50%] bg-transparent flex items-center justify-end md:gap-3 gap-2 text-text_color text-lg">
