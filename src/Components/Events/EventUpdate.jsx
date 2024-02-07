@@ -146,10 +146,12 @@ export default function EventUpdate() {
   useEffect(() => {
     if (screenWidth >= 550) {
       const gridContainer = document.getElementById("gridContainer");
+      const maxScrollValue =
+        gridContainer.scrollWidth - gridContainer.clientWidth;
 
       const timer = setInterval(() => {
         if (gridContainer.scrollWidth > gridContainer.clientWidth) {
-          if (gridContainer.scrollLeft >= 293) {
+          if (gridContainer.scrollLeft >= maxScrollValue - 1) {
             gridContainer.scrollLeft = 0;
           } else {
             gridContainer.scrollLeft += scrollValue;
@@ -158,11 +160,11 @@ export default function EventUpdate() {
       }, 5000);
 
       return () => clearInterval(timer);
-    }else{
-      const timer = setInterval(()=>{
+    } else {
+      const timer = setInterval(() => {
         setSliderIdx((prevIdx) => (prevIdx + 1) % images.length);
-      },5000)
-      return()=>clearInterval(timer)
+      }, 5000);
+      return () => clearInterval(timer);
     }
   }, [scrollValue]);
 
