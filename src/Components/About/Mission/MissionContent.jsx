@@ -1,3 +1,4 @@
+import SlideUp from "../../Cards/SlideUp";
 import "./mission.css";
 
 export default function MissionContent() {
@@ -68,49 +69,13 @@ export default function MissionContent() {
     },
   ];
 
-  const ContentBody = (Props) => {
-    const { data, heading, details } = Props;
-    return (
-      <div className="flex flex-col mb-5">
-        <div className="w-full ps-5 md:ps-23">
-          <h1 className="text-xl text-[#12372A] font-semibold">{heading}</h1>
-        </div>
-        {details && (
-          <div className="flex md:px-36 mt-10">
-            <p className="text-center tracking-wider">{details}</p>
-          </div>
-        )}
-
-        <div className="flex md:p-10 flex-wrap justify-center items-center md:space-x-7 gap-10 mt-5 md:gap-28">
-          {data.map((item, i) => {
-            return (
-              <div
-                key={i}
-                className="w-80 group/card relative h-96 shadow-2xl shadow-gray-500 cursor-pointer shade overflow-hidden transition-all duration-1000"
-                data-aos="slide-left"
-              >
-                <img
-                  src={item?.img}
-                  alt="image"
-                  className="w-full relative h-full z-0 object-cover "
-                />
-                <div className="w-full absolute -translate-y-16 group-hover/card:-translate-y-60 z-10 transition duration-700  min-h-60 bg-black bg-opacity-70 p-5 space-y-4 text-white ">
-                  <h2 className="font-semibold text-lg">{item.title}</h2>
-                  <p>{item?.content}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="w-full mt-5 md:px-16 bg-slate-200 pt-5 overflow-hidden">
-      <ContentBody data={data} heading={"Our Mission :"} details={details} />
-      <ContentBody data={vision} heading={"Our Vision :"} />
-      <div className="grid grid-cols-1 md:grid-cols-2  w-full gap-2 md:grid-rows-2  p-14 max-[977px]:p-16">
+      <SlideUp data={data} heading={"Our Mission :"} details={details} />
+      <div className="mt-10 md:mt-0">
+        <SlideUp data={vision} heading={"Our Vision :"} />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2  w-full gap-2 md:grid-rows-2 px-5 md:p-14">
         {content.map((item, i) => {
           return (
             <div
@@ -128,13 +93,23 @@ export default function MissionContent() {
       </div>
       <div className="flex justify-center items-center flex-col py-5">
         <div className="py-4">
-            <h2 className="text-xl font-semibold text-[#12372A]">Join the Ed-Web Family</h2>
+          <h2 className="text-xl font-semibold text-[#12372A]">
+            Join the Ed-Web Family
+          </h2>
         </div>
-        <div className="px-16 text-center">
-            <p>Join us at Ed-Web and embark on a journey towards a rewarding career in medicine. Together, we can make a positive impact on the healthcare industry in India and fulfill the growing demand for skilled medical professionals. Let us guide you towards success in your future.</p>
+        <div className="px-3 md:px-16 text-center">
+          <p>
+            Join us at Ed-Web and embark on a journey towards a rewarding career
+            in medicine. Together, we can make a positive impact on the
+            healthcare industry in India and fulfill the growing demand for
+            skilled medical professionals. Let us guide you towards success in
+            your future.
+          </p>
         </div>
         <div className="flex justify-center mt-5">
-          <button className="px-3 py-2 bg-yellow-500 rounded-lg hover:bg-yellow-600 text-white">Join Now</button>
+          <button className="px-3 py-2 bg-yellow-500 rounded-lg hover:bg-yellow-600 text-white">
+            Join Now
+          </button>
         </div>
       </div>
     </div>

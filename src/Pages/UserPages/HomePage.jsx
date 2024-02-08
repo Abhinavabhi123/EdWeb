@@ -8,7 +8,7 @@ import Banner from "../../Components/Banner/Banner";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 import Videos from "../../Components/Videos/Videos";
 import EventUpdate from "../../Components/Events/EventUpdate";
-import Education from "../../Components/Card/Education";
+import Education from "../../Components/Body/Education";
 // import Facility from "../Components/Facilities/Facility";
 import News from "../../Components/News/News";
 import Testimonial from "../../Components/Testimonial/Testimonial";

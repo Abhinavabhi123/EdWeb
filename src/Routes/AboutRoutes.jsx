@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { AboutMission, AboutUs } from "../Pages/UserPages";
+import { AboutMission, AboutUs, FacultyAndStaff } from "../Pages/UserPages";
 
 export default function AboutRoutes() {
   return (
@@ -8,6 +8,7 @@ export default function AboutRoutes() {
       <Routes>
         <Route path="/" element={<AboutUs />} />
         <Route path="/mission" element={<AboutMission />} />
+        <Route path="/faculty" element={<FacultyAndStaff/>} />
       </Routes>
     </div>
   );

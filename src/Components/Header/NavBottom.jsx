@@ -8,11 +8,13 @@ export default function NavBottom() {
           <li className="navList group relative">
             <Link to="/about_us">About Us</Link>
             <ul className=" w-72 h-fit nav_animate z-50 absolute bg-white left-0 top-[2.4rem] border shadow-md rounded-md hidden group-hover:block hover:block">
-              <li className="nav1 rounded-t-md">
-                <Link to={"/about_us/mission"}>School Mission and Vision</Link>
-              </li>
-              <li className="nav1">Missions & Values</li>
-              <li className="nav1">Faculty and Staff</li>
+              <Link to={"/about_us/mission"}>
+                <li className="nav1 rounded-t-md">School Mission and Vision</li>
+              </Link>
+              {/* <li className="nav1">Missions & Values</li> */}
+              <Link to={"/about_us/faculty"}>
+                <li className="nav1">Faculty and Staff</li>
+              </Link>
               <li className="nav1">Facilities</li>
               <li className="nav1">Testimonials and Success Stories</li>
               <li className="nav1">Our Accreditation and Affiliation</li>

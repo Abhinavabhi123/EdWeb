@@ -52,12 +52,12 @@ export default function AboutPageBody() {
 
   return (
     <>
-      <div className="w-full p- h-fit pb-5 bg-slate-200 mt-[10rem]">
+      <div className="w-full p- h-fit pb-5 bg-slate-200 md:mt-[10rem] mt-56">
         <div className="flex justify-center p-5">
           <h1 className="text-3xl font-serif ">About Us</h1>
         </div>
         {/* welcome section */}
-        <div className="w-full px-10 md:px-36 py-5 flex flex-col space-y-8">
+        <div className="w-full px-5  md:px-36 py-5 flex flex-col space-y-8">
           <h2 className="text-xl text-[#12372A] font-semibold">
             Welcome to Ed-Web :
           </h2>
@@ -70,7 +70,7 @@ export default function AboutPageBody() {
           </p>
         </div>
         {/* mission */}
-        <div className="w-full px-10 md:px-32 py-5 flex flex-col pb-10 bg-text_color md:flex-row space-y-8">
+        <div className="w-full px-5 md:px-32 py-5 flex flex-col pb-10 bg-text_color md:flex-row space-y-8">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
             <h2 className="text-xl text-[#fff] pb-3 font-semibold">
               Our Mission :
@@ -102,7 +102,7 @@ export default function AboutPageBody() {
           </div>
           <ScrollTrigger onEnter={() => setView(true)}>
             {view && (
-              <div className="w-full h-[768px] min-[414px]:h-[43rem] min-[412px]:h-[10rem] md:h-[28rem] bg-transparent flex justify-center items-center">
+              <div className="w-full h-[830px] min-[414px]:h-[43rem] min-[412px]:h-[10rem] md:h-[28rem] bg-transparent flex justify-center items-center">
                 <div className="w-fit h-[90%] bg-transparent flex justify-center items-center py-3">
                   <div className="w-[2px] bg-black line h-0 transition-all"></div>
                   <div className="w-fit h-full bg-transparent py-3 flex flex-col justify-between">
@@ -182,7 +182,7 @@ export default function AboutPageBody() {
         </div>
       </div>
       {/* Community Management */}
-      <div className="flex flex-col community  mt-5 px-32">
+      <div className="flex flex-col community  mt-5 md:px-32 px-3">
         <div className="flex  justify-start mb-3">
           <h1 className="text-xl text-[#12372A] font-semibold">
             Community Engagement
@@ -199,7 +199,7 @@ export default function AboutPageBody() {
         </div>
       </div>
       {/* Join */}
-      <div className="flex flex-col community  mt-10 px-32">
+      <div className="flex flex-col community  mt-10 md:px-32 px-2">
         <div className="flex  justify-start mb-3">
           <h1 className="text-xl text-[#12372A] font-semibold">Join Us!</h1>
         </div>

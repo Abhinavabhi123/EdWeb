@@ -2,12 +2,12 @@ import "./mission.css";
 
 export default function Mission() {
   return (
-    <div className="w-full h-[30rem] mission_banner ">
+    <div className="w-full h-[35rem] mission_banner ">
       {/* Banner div */}
       <div className="md:w-1/2 w-full min-h-1/2 relative md:h-full flex items-center justify-center text-white flex-col p-10 px-5 md:m-20 space-y-10 overflow-hidden">
         <div className="w-full">
           <h1
-            className="text-2xl md:text-5xl font-serif "
+            className="text-[30px] md:text-5xl font-serif "
             data-aos="fade-up"
             data-aos-duration="1000"
           >
