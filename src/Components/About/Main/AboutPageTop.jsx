@@ -12,7 +12,7 @@ export default function AboutPageTop() {
           <div className="w-32 h-1 rounded-md bg-gradient-to-r from-yellow-400  to-red-500">
 
             </div></div>
-          <p className="leading-7" data-aos="fade-up" data-aos-duration="1200">
+          <p className="leading-7 tracking-wider" data-aos="fade-up" data-aos-duration="1200">
             This caption succinctly encapsulates the school&apos;s commitment to
             providing quality education, nurturing students&apos; potential, and
             fostering a supportive learning environment. It emphasizes the

@@ -20,6 +20,7 @@ import Facility from "../../Components/Facilities/Facility";
 import Academics from "../../Components/Academic/Academics";
 
 export default function HomePage() {
+  window.scrollTo(0, 0);
 
   return (
     <div className="w-[100%] h-fit relative font-sans-condensed">
@@ -45,7 +46,6 @@ export default function HomePage() {
       <News />
       <Testimonial />
       <ApplyForm />
-
     </div>
   );
 }

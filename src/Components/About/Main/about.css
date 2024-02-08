@@ -16,6 +16,14 @@
     /* background-color: rgba(0, 0, 0, 0.468); */
     background: linear-gradient(90deg, rgba(0, 38, 43, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
+/* .community{
+    background-image: url('https://img.freepik.com/premium-photo/techno-mega-city-3d-rendering_41325-276.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image-width: 100%;
+    position: relative;
+} */
 
 .slide_up_image{
     position: absolute;
@@ -44,7 +52,7 @@
     left: 0;
     height: 100%;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.626);
+    background-color: rgba(1, 25, 90, 0.89);
 }
 
 

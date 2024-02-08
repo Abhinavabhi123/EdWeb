@@ -2,11 +2,16 @@ import { useEffect, useState } from "react";
 import { HashLoader } from "react-spinners";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "../Pages/UserPages/HomePage";
-import { AboutUs } from "../Pages/UserPages";
+
+// import { AboutMission} from "../Pages/UserPages";
+
 import { Footer, Header } from "../Components";
+import AboutRoutes from "./AboutRoutes";
 
 export default function UserRoute() {
   const [loading, setLoading] = useState(true);
+
+  
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,17 +26,19 @@ export default function UserRoute() {
       </div>
     );
   }
+  
 
   return (
     <div>
-      <div className="w-full md:h-[4rem] h-[5.5rem]">
+      <div className="w-full md:h-[2.1rem] h-[5.5rem]">
         <Header />
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/about_us/*" element={<AboutRoutes/>} />
+        {/* <Route path="/mission" element={<AboutMission />} /> */}
       </Routes>
-      <div className="w-full md:h-[7rem] h-[5.5rem]">
+      <div className="w-full md:h-[7rem] mt-10 h-[5.5rem]">
         <Footer />
       </div>
     </div>
