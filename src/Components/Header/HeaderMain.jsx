@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { LiaSchoolSolid } from "react-icons/lia";
 import NavDetails from "./NavDetails";
 // import Search, { SearchModal } from "./Search";
@@ -9,20 +9,35 @@ import { useNavigate } from "react-router-dom";
 
 export default function HeaderMain() {
   // const [isModalOpen, setIsModalOpen] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-  if(menuOpen){
+  if (menuOpen) {
     window.scrollTo(0, 0);
   }
 
   function menuHandler() {
     setMenuOpen(!menuOpen);
   }
+  useEffect(() => {
+    if (!menuOpen) {
+      const input = document.getElementById('check');
+      if (input) { 
+        input.checked = false;
+      }
+    }
+  }, [menuOpen]); 
+
+
   return (
     <>
       <div className="w-[100%] h-[7rem] fixed bg-white pb-3 max-[1290px]:h-[5.5rem] flex items-center justify-between px-2 shadow-md min-[1207px]:px-[15%] z-40 ">
         <div className="w-fit h-full flex md:items-end items-center">
-          <img src="/logo.svg" alt="logo" className="w-24 md:w-28 h-auto cursor-pointer" onClick={()=>navigate("/")} />
+          <img
+            src="/logo.svg"
+            alt="logo"
+            className="w-24 md:w-28 h-auto cursor-pointer"
+            onClick={() => navigate("/")}
+          />
         </div>
         <div className="w-[90%] h-full bg-transparent flex flex-col items-end justify-center">
           <div className="w-[100%] h-[50%] bg-transparent flex items-center justify-end md:gap-3 gap-2 text-text_color text-lg">
@@ -36,7 +51,7 @@ export default function HeaderMain() {
               <LiaSchoolSolid size={20} />
             </div> */}
             {/* Menu open in responsive design */}
-            <label className="menuButton " htmlFor="check">
+            <label className="menuButton" htmlFor="check">
               <input type="checkbox" id="check" onClick={menuHandler} />
               <span className="top"></span>
               <span className="mid"></span>
@@ -53,7 +68,7 @@ export default function HeaderMain() {
         /> */}
       </div>
       {/* Responsive menu details */}
-      <MenuOpen menuOpen={menuOpen} />
+      <MenuOpen menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </>
   );
 }

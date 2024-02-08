@@ -2,9 +2,10 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoBagHandleSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function MenuOpen(Props) {
-  const { menuOpen } = Props;
+  const { menuOpen,setMenuOpen } = Props;
   const [show, setShow] = useState([
     { id: 1, show: false },
     { id: 2, show: false },
@@ -22,6 +23,10 @@ export default function MenuOpen(Props) {
     );
   }
 
+  function closeModal(){
+    setMenuOpen(false)
+  }
+
   return (
     <div
       className={`${
@@ -30,7 +35,7 @@ export default function MenuOpen(Props) {
     >
       <ul className="w-full h-full text-lg font-semibold text-white transition-all duration-500 ease-in-out">
         <div className="menu_details">
-          <p>We Are GEMS</p>
+        <Link to="/about_us" onClick={closeModal}>About Us</Link>
           {show[0].id === 1 && show[0].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -49,9 +54,15 @@ export default function MenuOpen(Props) {
             show[0].id === 1 && show[0].show === true ? "block" : "hidden"
           } w-full h-fit `}
         >
-          <li className="nav1 nav2">Message From Our Founder</li>
-          <li className="nav1 nav2">Mission & Values</li>
-          <li className="nav1 nav2">Over 60 Years of Legacy</li>
+          <Link to={"/about_us/mission"} onClick={closeModal}>
+            <li className="nav1 nav2">School Mission and Vision</li>
+          </Link>
+          <Link to={"/about_us/faculty"} onClick={closeModal}>
+            <li className="nav1 nav2">Faculty and Staff</li>
+          </Link>
+          <Link to={"/about_us/facilities"} onClick={closeModal}>
+            <li className="nav1 nav2">Facilities</li>
+          </Link>
           <li className="nav1 nav2">Our Company</li>
           <li className="nav1 nav2">Our Leadership</li>
           <li className="nav1 nav2">Our Accreditations and Affiliations</li>
@@ -194,11 +205,13 @@ export default function MenuOpen(Props) {
         </ul>
       </ul>
       <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
-        <BiSolidPhoneCall/>
-        Contact</div>
+        <BiSolidPhoneCall />
+        Contact
+      </div>
       <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
-        <IoBagHandleSharp/>
-        Career</div>
+        <IoBagHandleSharp />
+        Career
+      </div>
     </div>
   );
 }
