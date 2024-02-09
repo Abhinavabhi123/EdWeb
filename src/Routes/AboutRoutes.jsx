@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { AboutMission, AboutUs, About_Facility, FacultyAndStaff } from "../Pages/UserPages";
+import { AboutMission, AboutTestimonial, AboutUs, About_Facility, FacultyAndStaff } from "../Pages/UserPages";
 
 export default function AboutRoutes() {
   return (
@@ -10,6 +10,7 @@ export default function AboutRoutes() {
         <Route path="/mission" element={<AboutMission />} />
         <Route path="/faculty" element={<FacultyAndStaff/>} />
         <Route path="/facilities" element={<About_Facility/>} />
+        <Route path="/testimonials" element={<AboutTestimonial/>} />
       </Routes>
     </div>
   );

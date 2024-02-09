@@ -18,7 +18,9 @@ export default function NavBottom() {
               <Link to={"/about_us/facilities"}>
                 <li className="nav1">Facilities</li>
               </Link>
-              <li className="nav1">Testimonials and Success Stories</li>
+              <Link to={"/about_us/testimonials"}>
+                <li className="nav1">Testimonials and Success Stories</li>
+              </Link>
               <li className="nav1">Our Accreditation and Affiliation</li>
               <li className="nav1">Social Responsibility</li>
             </ul>

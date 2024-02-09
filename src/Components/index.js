@@ -11,3 +11,7 @@ export {default as FacultyBanner} from "./About/Faculty/FacultyBanner"
 export {default as FacultyContent} from "./About/Faculty/FacultyContent"
 export {default as FacilitiesBanner} from "./About/Facilities/FacilitiesBanner"
 export {default as FacilitiesContent} from "./About/Facilities/FacilitiesContent"
+export {default as TestimonialBanner}  from "./About/Testimonials/TestimonialBanner"
+export {default as TestimonialContent} from "./About/Testimonials/TestimonialContent"
+
+

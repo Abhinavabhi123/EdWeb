@@ -1,0 +1,20 @@
+.testimonial_banner {
+  background-image: url("https://img.freepik.com/premium-photo/businessman-holding-smile-icon-best-evaluation-customer-satisfaction-concept_50039-3275.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+.testimonial_banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 38, 43, 1) 0%,
+    rgba(22, 22, 22, 0.3) 100%
+  );
+}
