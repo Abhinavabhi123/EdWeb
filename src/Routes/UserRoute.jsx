@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { HashLoader } from "react-spinners";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../Pages/UserPages/HomePage";
+
 
 // import { AboutMission} from "../Pages/UserPages";
 
 import { Footer, Header } from "../Components";
 import AboutRoutes from "./AboutRoutes";
+import { ContactUsPage, HomePage } from "../Pages/UserPages";
 
 export default function UserRoute() {
   const [loading, setLoading] = useState(true);
@@ -36,7 +37,7 @@ export default function UserRoute() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about_us/*" element={<AboutRoutes/>} />
-        {/* <Route path="/mission" element={<AboutMission />} /> */}
+        <Route path="/contact_us" element={<ContactUsPage />} />
       </Routes>
       <div className="w-full md:h-[7rem] mt-10 h-[5.5rem]">
         <Footer />

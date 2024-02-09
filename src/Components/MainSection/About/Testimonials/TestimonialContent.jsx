@@ -11,25 +11,6 @@ export default function TestimonialContent() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       dots: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       initialSlide: 0,
-    //     },
-    //   },
-    // ],
   };
 
   const SliderComponent = (Props) => {
@@ -114,7 +95,7 @@ export default function TestimonialContent() {
           <h1 className="text-2xl text-[#12372A] font-semibold">Conclusion</h1>
         </div>
       </div>
-      <div className="px-20 space-y-5 rounded-lg bg-slate-200 py-7">
+      <div className="px-10 md:px-20 space-y-5 rounded-lg bg-slate-200 py-7">
         <p>
           At [School Name], our community is built on a foundation of shared
           experiences, achievements, and moments of growth. Our testimonials

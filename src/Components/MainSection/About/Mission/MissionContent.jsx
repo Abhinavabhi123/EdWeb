@@ -1,4 +1,4 @@
-import SlideUp from "../../Cards/SlideUp";
+import SlideUp from "../../../Cards/SlideUp";
 import "./mission.css";
 
 export default function MissionContent() {

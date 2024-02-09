@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { IoBagHandleSharp } from "react-icons/io5";
+// import { BiSolidPhoneCall } from "react-icons/bi";
+// import { IoBagHandleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 export default function MenuOpen(Props) {
-  const { menuOpen,setMenuOpen } = Props;
+  const { menuOpen, setMenuOpen } = Props;
   const [show, setShow] = useState([
     { id: 1, show: false },
     { id: 2, show: false },
@@ -23,19 +23,21 @@ export default function MenuOpen(Props) {
     );
   }
 
-  function closeModal(){
-    setMenuOpen(false)
+  function closeModal() {
+    setMenuOpen(false);
   }
 
   return (
     <div
       className={`${
         menuOpen === true ? "block" : "hidden"
-      } h-fit bg-text_color z-50 absolute nav_animate w-full min-[1290px]:hidden pb-5 px-5 mt-[5.5rem]`}
+      } h-full bg-text_color z-50 absolute nav_animate w-full min-[1290px]:hidden pb-5 px-5 mt-[5.5rem]`}
     >
       <ul className="w-full h-full text-lg font-semibold text-white transition-all duration-500 ease-in-out">
         <div className="menu_details">
-        <Link to="/about_us" onClick={closeModal}>About Us</Link>
+          <Link to="/about_us" onClick={closeModal}>
+            About Us
+          </Link>
           {show[0].id === 1 && show[0].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -63,7 +65,9 @@ export default function MenuOpen(Props) {
           <Link to={"/about_us/facilities"} onClick={closeModal}>
             <li className="nav1 nav2">Facilities</li>
           </Link>
-          <li className="nav1 nav2">Our Company</li>
+          <Link to={"/about_us/testimonials"} onClick={closeModal}>
+            <li className="nav1 nav2">Testimonials and Success Stories</li>
+          </Link>
           <li className="nav1 nav2">Our Leadership</li>
           <li className="nav1 nav2">Our Accreditations and Affiliations</li>
           <li className="nav1 nav2">Social Responsibility</li>
@@ -204,14 +208,16 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Feedback & Suggestion</li>
         </ul>
       </ul>
-      <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
-        <BiSolidPhoneCall />
-        Contact
-      </div>
+      {/* <Link to={"/contact_us"} onClick={closeModal}>
+        <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
+          <BiSolidPhoneCall />
+          Contact
+        </div>
+      </Link>
       <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
         <IoBagHandleSharp />
         Career
-      </div>
+      </div> */}
     </div>
   );
 }

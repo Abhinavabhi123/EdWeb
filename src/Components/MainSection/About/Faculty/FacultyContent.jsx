@@ -1,4 +1,4 @@
-import TeacherSlideUp from "../../Cards/TeacherSlideUp";
+import TeacherSlideUp from "../../../Cards/TeacherSlideUp";
 
 export default function FacultyContent() {
   const teachersData = [

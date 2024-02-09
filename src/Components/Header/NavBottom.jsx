@@ -106,7 +106,7 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList relative group">
-            Contact Us
+            Add More
             <ul className="w-72 nav_animate h-fit z-50 absolute top-[2.4rem] bg-white rounded-md border shadow-md hidden group-hover:block">
               <li className="nav1 rounded-t-md">School of Thought: Podcast</li>
               <li className="nav1">Choosing the Right School</li>

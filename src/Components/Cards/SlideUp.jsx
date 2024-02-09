@@ -3,7 +3,7 @@ export default function SlideUp(Props) {
     const { data, heading, details } = Props;
 
     return (
-      <div className="flex flex-col  mb-5">
+      <div className="w-full flex flex-col bg-transparent mb-5">
         <div className="w-full ps-5 md:ps-24">
           <h1 className="text-2xl text-[#12372A] font-semibold">{heading}</h1>
         </div>
@@ -13,12 +13,12 @@ export default function SlideUp(Props) {
           </div>
         )}
 
-        <div className="flex md:p-10 flex-wrap justify-center items-center md:space-x-7 gap-10 mt-5 md:gap-28">
+        <div className="flex md:p-10 flex-wrap justify-center bg-transparent items-center md:space-x-7 gap-5 mt-5 md:gap-28">
           {data.map((item, i) => {
             return (
               <div
                 key={i}
-                className="w-80 group/card relative h-96 shadow-2xl shadow-gray-500 cursor-pointer shade overflow-hidden transition-all duration-1000"
+                className="w-72 group/card relative h-96 shadow-2xl shadow-gray-500 cursor-pointer shade overflow-hidden transition-all duration-1000"
                 data-aos="slide-left"
               >
                 <img
