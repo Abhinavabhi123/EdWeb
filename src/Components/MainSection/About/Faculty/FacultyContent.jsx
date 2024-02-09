@@ -130,7 +130,7 @@ export default function FacultyContent() {
   ];
 
   return (
-    <div className="w-full flex flex-col gap-5 md:gap-10 py-5 min-[768px]:px-5 md:px-20 px-5">
+    <div className="w-full flex flex-col gap-5 md:gap-10 py-5  md:px-20 px-5">
       {/* section 1 */}
       <div className="w-full">
         <div className="flex p-5">

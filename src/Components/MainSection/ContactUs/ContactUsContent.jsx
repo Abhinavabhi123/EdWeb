@@ -14,7 +14,7 @@ export default function ContactUsContent() {
           <form className="flex flex-col w-[90%] bg-transparent md:gap-3 py-5">
             {/* Section 1 */}
             <div className="flex flex-col md:flex-row flex-wrap justify-center  md:gap-8">
-              <div className="flex flex-col ">
+              <div className="flex flex-col">
                 <label htmlFor="name" className="text-sm">
                   Name
                 </label>
@@ -108,7 +108,7 @@ export default function ContactUsContent() {
             </div>
           </form>
         </div>
-        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-[#CDFADB] rounded-xl bg-transparent md:p-20 p-5">
+        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-[#9aefde] rounded-xl bg-transparent md:p-20 p-5">
           <div className="flex flex-col gap-5 ">
             <h3 className="text-xl text-[#12372A] font-semibold">Details</h3>
             <div className="w-full min-h-32 bg-transparent">

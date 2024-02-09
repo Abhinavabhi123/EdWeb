@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "../Components";
 import AboutRoutes from "./AboutRoutes";
 import { ContactUsPage, HomePage } from "../Pages/UserPages";
+import AcademicsRoute from "./AcademicsRoute";
 
 export default function UserRoute() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ export default function UserRoute() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about_us/*" element={<AboutRoutes/>} />
         <Route path="/contact_us" element={<ContactUsPage />} />
+        <Route path="/academics/*" element={<AcademicsRoute />} />
       </Routes>
       <div className="w-full md:h-[7rem] mt-10 h-[5.5rem]">
         <Footer />

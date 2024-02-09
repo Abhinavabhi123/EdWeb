@@ -54,7 +54,7 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList group relative">
-            Academics
+            <Link to={"/academics"}>Academics</Link>
             <ul className=" w-72 nav_animate h-fit z-50 absolute bg-white top-[2.2em] left-0 hidden group-hover:block group-hover/our:block shadow-md border rounded-md ">
               <li className="nav1 relative flex justify-between pe-2 items-center group/our rounded-t-md">
                 Schools by Curriculum

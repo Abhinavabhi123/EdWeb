@@ -19,3 +19,6 @@ export {default as ContactUsBanner} from "./MainSection/ContactUs/ContactUsBanne
 export {default as ContactUsContent} from "./MainSection/ContactUs/ContactUsContent"
 
 
+// todo: Academic Section
+export {default as AcademicMainBanner} from "./MainSection/Academics/Main/AcademicMainBanner"
+export {default as AcademicMainContent} from "./MainSection/Academics/Main/AcademicMainContent"
