@@ -187,6 +187,7 @@ export default function AcademicMainContent() {
                   <div
                     key={i}
                     className="w-64 relative overflow-hidden max-[566px]:m-auto  h-80 bg-slate-200"
+                    data-aos="slide-up"
                   >
                     <div className="academic_grid_card_inner flex justify-center items-center">
                       {item.image}
@@ -228,6 +229,7 @@ export default function AcademicMainContent() {
                   <div
                     key={i}
                     className="w-64 relative h-80 max-[566px]:m-auto group overflow-hidden"
+                    data-aos="fade-left "
                   >
                     <img
                       src={item?.image}
@@ -324,7 +326,7 @@ export default function AcademicMainContent() {
             </div>
             <div className="w-full md:min-h-[35rem] md:px-16 bg-transparent  flex flex-col md:flex-row">
               <div className="md:w-[60%] h-full bg-transparent ">
-                <div className="w-full h-2/3 bg-[#EEEDEB] md:rounded-tl-lg p-2 space-y-3">
+                <div className="w-full h-2/3 bg-[#EEEDEB] md:rounded-tl-lg p-2 ps-9 space-y-3">
                   <h2 className="font-semibold"> Diverse Course Offerings</h2>
                   <p className="text-sm md:text-base">
                     Our CTE program features a diverse range of courses designed
