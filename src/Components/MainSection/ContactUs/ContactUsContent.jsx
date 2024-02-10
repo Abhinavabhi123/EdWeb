@@ -203,7 +203,7 @@ export default function ContactUsContent() {
             </div>
           </form>
         </div>
-        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-[#9aefde] rounded-xl bg-transparent md:p-20 p-5">
+        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-[#83e6d2] rounded-xl bg-transparent md:p-20 p-5">
           <div className="flex flex-col gap-5 ">
             <h3 className="text-xl text-[#12372A] font-semibold">Details</h3>
             <div className="w-full min-h-32 bg-transparent">

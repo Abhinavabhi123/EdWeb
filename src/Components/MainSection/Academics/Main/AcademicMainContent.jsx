@@ -389,6 +389,23 @@ export default function AcademicMainContent() {
                 </div>
               </div>
             </div>
+            {/* Last Section */}
+            <div className="px-5 py-10">
+              <div className="pb-5">
+                <h2 className="font-semibold">Conclusion</h2>
+              </div>
+              <div>
+                <p className="text-center">
+                  At [School Name], we believe that extracurricular activities
+                  are an essential component of a well-rounded education.
+                  Through participation in these activities, students develop
+                  important life skills, form lasting friendships, and create
+                  cherished memories that will stay with them long after
+                  graduation. We encourage all students to get involved and make
+                  the most of their [School Name] experience.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
