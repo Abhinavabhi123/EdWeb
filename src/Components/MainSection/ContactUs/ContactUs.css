@@ -18,3 +18,11 @@
     rgba(22, 22, 22, 0.3) 100%
   );
 }
+.custom-number-input::-webkit-inner-spin-button,
+.custom-number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+

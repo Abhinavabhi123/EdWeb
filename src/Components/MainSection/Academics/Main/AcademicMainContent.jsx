@@ -269,7 +269,7 @@ export default function AcademicMainContent() {
               offer:
             </p>
           </div>
-          <div className="w-full md:h-[27rem] bg-transparent p-5 md:p-0 flex flex-col md:flex-row justify-center">
+          <div className="w-full md:h-[27rem] h-fit bg-transparent p-5 md:p-0 flex flex-col md:flex-row justify-center">
             <div className="w-full  md:w-fit h-1/2 md:h-full bg-transparent flex justify-center items-center">
               <img
                 className="md:max-w-full h-full object-contain"
@@ -277,9 +277,14 @@ export default function AcademicMainContent() {
                 alt="image"
               />
             </div>
-            <div className="w-full md:w-2/3 h-1/2 md:h-full relative bg--500">
-              <img src="/background.svg" className="w-full relative h-full" alt="image" />
-              <div className="w-full absolute  h-full bg-[#0000001b] top-0 left-0 md:p-10 p-4 space-y-6">
+            <div className="w-full md:w-2/3 h-fit md:h-full relative bg-transparent">
+              {/* <img
+                src="/background.svg"
+                className="w-full relative h-full"
+                alt="image"
+              /> */}
+              <div className="w-full  h-full bg-[#0000001b] top-0 left-0 md:p-10 p-4 space-y-6">
+                <h3 className="font-semibold">Core Academic Subjects</h3>
                 <p className="text-sm md:text-base">
                   We offer a range of Advanced Placement (AP) and International
                   Baccalaureate (IB) courses for students seeking advanced
@@ -294,6 +299,92 @@ export default function AcademicMainContent() {
                   <li>Social Studies</li>
                   <li>Foreign Languages</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Career and Technical Education  */}
+        <div className="w-full ">
+          <div className="md:p-10 p-4">
+            <h3 className="font-semibold">
+              Career and Technical Education (CTE)
+            </h3>
+            <div className="p-5">
+              <p className="text-sm md:text-base">
+                At [School Name], we understand the importance of preparing
+                students for success in both college and career pathways. Our
+                Career and Technical Education (CTE) program offers students the
+                opportunity to explore various career fields, gain hands-on
+                experience, and develop valuable skills that are in high demand
+                in today&apos;s workforce. Whether students are interested in
+                business, technology, healthcare, or the trades, our CTE program
+                provides pathways to success and empowers students to achieve
+                their goals.
+              </p>
+            </div>
+            <div className="w-full md:min-h-[35rem] md:px-16 bg-transparent  flex flex-col md:flex-row">
+              <div className="md:w-[60%] h-full bg-transparent ">
+                <div className="w-full h-2/3 bg-[#EEEDEB] md:rounded-tl-lg p-2 space-y-3">
+                  <h2 className="font-semibold"> Diverse Course Offerings</h2>
+                  <p className="text-sm md:text-base">
+                    Our CTE program features a diverse range of courses designed
+                    to meet the needs and interests of our students. From
+                    introductory courses to advanced training programs, students
+                    have the opportunity to explore a wide variety of career
+                    pathways. Some of our most popular CTE courses include:
+                  </p>
+                  <ul className="ps-8 list-disc text-sm">
+                    <li>Business Management and Entrepreneurship</li>
+                    <li>Information Technology and Computer Science</li>
+                    <li>Health Sciences and Medical Careers</li>
+                    <li>Culinary Arts and Hospitality Management</li>
+                    <li>Automotive Technology and Engineering</li>
+                    <li>Construction Trades and Building Technology</li>
+                    <li>Graphic Design and Digital Media</li>
+                    <li>Environmental Science and Sustainability</li>
+                  </ul>
+                </div>
+                <div className="w-full h-1/3 bg-[#BFD8AF] md:rounded-bl-lg md:p-[2.4rem] p-5">
+                  <h2 className="font-semibold">
+                    Hands-On Learning Experiences
+                  </h2>
+                  <p className="text-sm md:text-base">
+                    One of the hallmarks of our CTE program is its emphasis on
+                    hands-on learning experiences. Through internships, job
+                    shadowing opportunities, and work-based learning
+                    experiences, students have the chance to apply classroom
+                    knowledge in real-world settings and gain valuable industry
+                    experience. Our state-of-the-art facilities and
+                    industry-standard equipment provide students with the tools
+                    and resources they need to succeed in their chosen career
+                    fields.
+                  </p>
+                </div>
+              </div>
+              <div className="md:w-[40%] h-full bg-[#EBE3D5] md:rounded-r-lg p-5">
+                <h2 className="font-semibold">
+                  Industry Partnerships and Certifications
+                </h2>
+                <p className="text-sm md:text-base">
+                  We are proud to partner with local businesses, industry
+                  organizations, and professional associations to enhance our
+                  CTE program and provide students with valuable networking
+                  opportunities and industry connections. Many of our CTE
+                  courses offer industry-recognized certifications and
+                  credentials, giving students a competitive edge in the job
+                  market and opening doors to exciting career opportunities. Our
+                  dedicated faculty and staff are committed to supporting
+                  students every step of the way as they explore their
+                  interests, develop their skills, and pursue their career
+                  aspirations through our CTE program.
+                </p>
+                <div className="justify-center items-center mt-6 flex">
+                  <img
+                    className="w-80"
+                    src="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595850.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais"
+                    alt="image"
+                  />
+                </div>
               </div>
             </div>
           </div>
