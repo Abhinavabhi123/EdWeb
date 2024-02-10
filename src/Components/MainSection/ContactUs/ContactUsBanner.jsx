@@ -22,9 +22,10 @@ export default function ContactUsBanner() {
           data-aos-duration="1200"
         >
           At [School Name], we value open communication and welcome the
-          opportunity to connect with you. Whether you&apos;re a prospective student,
-          parent, alumni, or community member, we&apos;re here to answer your
-          questions, address your concerns, and assist you in any way we can.
+          opportunity to connect with you. Whether you&apos;re a prospective
+          student, parent, alumni, or community member, we&apos;re here to
+          answer your questions, address your concerns, and assist you in any
+          way we can.
         </p>
       </div>
     </div>

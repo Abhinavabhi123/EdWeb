@@ -2,22 +2,34 @@ import { useEffect, useState } from "react";
 import { FaXTwitter, FaWhatsapp, FaYoutube, FaFacebook } from "react-icons/fa6";
 import { State, City } from "country-state-city";
 import { useFormik } from "formik";
-import * as Yup from 'yup';
+import * as Yup from "yup";
 import "./ContactUs.css";
 
 export default function ContactUsContent() {
-  const validationSchema = Yup.object().shape({
-    name: Yup.string().min(2, 'Name must be at least 2 characters').required('Name is required'),
-    email: Yup.string().email('Invalid email').required('Email is required'),
-    phone: Yup.string().matches(/^[0-9]{10}$/, 'Invalid phone number').required('Phone is required'),
-    country: Yup.string().nullable(false).required('Country is required'),
-    state: Yup.string().nullable(false).required('State is required'),
-    city: Yup.string().nullable(false).required('City is required'),
-    message: Yup.string().nullable(false).min(50, 'Message must be at least 50 characters long').required('Please enter the message'),
-  });
-
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
+
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(2, "Name must be at least 2 characters")
+      .required("Name is required"),
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    phone: Yup.string()
+      .matches(/^[0-9]{10}$/, "Invalid phone number")
+      .required("Phone is required"),
+    country: Yup.string().nullable(false).required("Country is required"),
+    state: Yup.string().nullable(false).required("State is required"),
+    city: Yup.string().nullable(false).required("City is required"),
+    message: Yup.string()
+      .nullable(false)
+      .min(50, "Message must be at least 50 characters long")
+      .required("Please enter the message"),
+  });
+
+  useEffect(() => {
+    setStates(State.getStatesOfCountry("IN"));
+  }, []);
+
   const initialValues = {
     name: "",
     phone: "",
@@ -25,39 +37,35 @@ export default function ContactUsContent() {
     country: "",
     state: "",
     city: "",
-    message:"",
+    message: "",
   };
-  useEffect(() => {
-    setStates(State.getStatesOfCountry("IN"));
-  }, []);
+
   const handleSelectChange = (event) => {
     const array = event.target.value.split(" ");
-    console.log(City.getCitiesOfState(array[0], array[1]),"sdkjsn");
+    console.log(City.getCitiesOfState(array[0], array[1]), "sdkjsn");
     setCities(City.getCitiesOfState(array[0], array[1]));
   };
 
-
-
-  const {  handleChange, handleSubmit, errors } = useFormik({
+  const { handleChange, handleSubmit, errors } = useFormik({
     initialValues,
     validationSchema,
     onSubmit: () => {
-      alert("Form submitted Successfully")
+      alert("Form submitted Successfully");
       console.log("Success");
     },
   });
 
-
   return (
     <div className="w-full h-fit bg-transparent p-10">
       <div className="p-5">
-        <h1 className="text-2xl text-[#12372A] font-semibold">
-          Contact Us
-        </h1>
+        <h1 className="text-2xl text-[#12372A] font-semibold">Contact Us</h1>
       </div>
       <div className="w-full  min-h-[30rem] bg-transparent flex flex-col items-center md:flex-row">
         <div className="w-full md:w-1/2 h-1/2 md:h-full bg-transparent flex justify-center items-center ">
-          <form className="flex flex-col w-[90%] bg-transparent md:gap-3 py-5"  onSubmit={handleSubmit}>
+          <form
+            className="flex flex-col w-[90%] bg-transparent md:gap-3 py-5"
+            onSubmit={handleSubmit}
+          >
             {/* Section 1 */}
             <div className="flex flex-col md:flex-row flex-wrap justify-center  md:gap-8">
               <div className="flex flex-col">
@@ -71,9 +79,9 @@ export default function ContactUsContent() {
                   className={`w-full md:w-72 ps-3 py-3 rounded-md outline-none border placeholder:text-black placeholder:text-sm border-blue-400 text-black`}
                   onChange={handleChange}
                 />
-                {
-                  errors?.name && <p className="text-red-400 text-sm">{errors.name}</p>
-                }
+                {errors?.name && (
+                  <p className="text-red-400 text-sm">{errors.name}</p>
+                )}
               </div>
               <div className="flex flex-col mt-5 md:mt-0">
                 <label htmlFor="email" className="text-sm">
@@ -85,10 +93,10 @@ export default function ContactUsContent() {
                   placeholder="Email*"
                   className={`w-full md:w-72 ps-3 py-3 rounded-md outline-none border placeholder:text-black placeholder:text-sm border-blue-400 text-black`}
                   onChange={handleChange}
-               />
-               {
-                  errors?.email && <p className="text-red-400 text-sm">{errors.email}</p>
-                }
+                />
+                {errors?.email && (
+                  <p className="text-red-400 text-sm">{errors.email}</p>
+                )}
               </div>
             </div>
             {/* Section 2 */}
@@ -103,14 +111,14 @@ export default function ContactUsContent() {
                   placeholder="Phone*"
                   className={`w-full custom-number-input md:w-72 ps-3 py-3 rounded-md outline-none border placeholder:text-black placeholder:text-sm border-blue-400 text-black`}
                   onChange={handleChange}
-               />
-               {
-                  errors?.phone && <p className="text-red-400 text-sm">{errors.phone}</p>
-                }
+                />
+                {errors?.phone && (
+                  <p className="text-red-400 text-sm">{errors.phone}</p>
+                )}
               </div>
               <div className="flex flex-col mt-5 md:mt-0">
                 <label htmlFor="email" className="text-sm">
-                 Country
+                  Country
                 </label>
                 <select
                   className={` w-full md:w-72 ps-3 py-3 rounded-md outline-none border text-sm  border-blue-400 text-black`}
@@ -120,9 +128,9 @@ export default function ContactUsContent() {
                   <option value="">Please Select</option>
                   <option value="AL">India</option>
                 </select>
-                {
-                  errors?.country && <p className="text-red-400 text-sm">{errors.country}</p>
-                }
+                {errors?.country && (
+                  <p className="text-red-400 text-sm">{errors.country}</p>
+                )}
               </div>
             </div>
             {/* Section 3 */}
@@ -143,19 +151,19 @@ export default function ContactUsContent() {
                     Please Select State
                   </option>
                   {states.map((item, i) => {
-                  return (
-                    <option
-                    key={i}
-                    value={`${item?.countryCode} ${item?.isoCode} ${item?.name}`}
-                    >
-                      {item?.name}
-                    </option>
-                  );
-                })}
+                    return (
+                      <option
+                        key={i}
+                        value={`${item?.countryCode} ${item?.isoCode} ${item?.name}`}
+                      >
+                        {item?.name}
+                      </option>
+                    );
+                  })}
                 </select>
-                {
-                  errors?.state && <p className="text-red-400 text-sm">{errors.state}</p>
-                }
+                {errors?.state && (
+                  <p className="text-red-400 text-sm">{errors.state}</p>
+                )}
               </div>
               <div className="flex flex-col mt-5 md:mt-0">
                 <label htmlFor="email" className="text-sm">
@@ -165,21 +173,21 @@ export default function ContactUsContent() {
                   name="city"
                   className={`w-full md:w-72 ps-3 py-3 rounded-md outline-none border text-sm  border-blue-400 text-black`}
                   onChange={handleChange}
-              >
+                >
                   <option value="" className="w-6 md:w-36 ">
                     Please Select City
                   </option>
                   {cities.map((item, i) => {
-                  return (
-                    <option key={i} value={item?.name}>
-                      {item?.name}
-                    </option>
-                  );
-                })}
+                    return (
+                      <option key={i} value={item?.name}>
+                        {item?.name}
+                      </option>
+                    );
+                  })}
                 </select>
-                {
-                  errors?.city && <p className="text-red-400 text-sm">{errors.city}</p>
-                }
+                {errors?.city && (
+                  <p className="text-red-400 text-sm">{errors.city}</p>
+                )}
               </div>
             </div>
             <div className="w-full mt-5 md:mt-0 md:px-4">
@@ -192,9 +200,9 @@ export default function ContactUsContent() {
                 placeholder="Message Here"
                 onChange={handleChange}
               ></textarea>
-              {
-                  errors?.message && <p className="text-red-400 text-sm">{errors.message}</p>
-                }
+              {errors?.message && (
+                <p className="text-red-400 text-sm">{errors.message}</p>
+              )}
             </div>
             <div className="w-full flex justify-center mt-4 md:mt-0">
               <button className="ps-2 w-36 rounded-lg py-2 bg-[#211C6A] text-white">
@@ -208,7 +216,7 @@ export default function ContactUsContent() {
             <h3 className="text-xl text-[#12372A] font-semibold">Details</h3>
             <div className="w-full min-h-32 bg-transparent">
               <h3>Address:</h3>
-              <ul className="ps-5 list-disc text-blue-500" >
+              <ul className="ps-5 list-disc text-blue-500">
                 <li>18 Goodfriend Drive East Hampton,</li>
                 <li>NY 11937 739 Butter Lane Bridgehampton</li>
                 <li>NY 1193 18 Goodfriend Drive East Hampton, NY 11937</li>
@@ -216,7 +224,9 @@ export default function ContactUsContent() {
             </div>
             <div className="w-full h-20">
               <h3>Email:</h3>
-              <h2 className="ps-5 text-base text-green-500">example@gmail.com</h2>
+              <h2 className="ps-5 text-base text-green-500">
+                example@gmail.com
+              </h2>
             </div>
             <div className="w-full h-32 bg-transparent space-y-4">
               <h3>Social Media:</h3>

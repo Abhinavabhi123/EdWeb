@@ -1,134 +1,12 @@
+import {
+  adminData,
+  facultyContent,
+  supportData,
+  teachersData,
+} from "../../../../Services/constants";
 import TeacherSlideUp from "../../../Cards/TeacherSlideUp";
 
 export default function FacultyContent() {
-  const teachersData = [
-    {
-      name: "Dr. Emily Johnson ",
-      image:
-        "https://img.freepik.com/free-photo/smiley-woman-holding-book-front-view_23-2149915887.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Head of Science Department",
-      subject: "Biology",
-      desc: "Dr. Emily Johnson brings over 15 years of experience in teaching Biology to our school. With a Ph.D. in Biological Sciences, she is passionate about exploring the wonders of the natural world with her students. ",
-    },
-    {
-      name: "Mr. David Patel",
-      image:
-        "https://img.freepik.com/premium-photo/young-asian-teacher-man-teaching-video-conference-with-student_208349-884.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Mathematics Teacher",
-      subject: "Mathematics",
-      desc: "Mr. David Patel is a dedicated Mathematics teacher with a knack for making complex concepts accessible to all students. With a Master's degree in Mathematics Education.",
-    },
-    {
-      name: "Ms. Sarah Thompson",
-      image:
-        "https://img.freepik.com/free-photo/confident-smiling-businesswoman-writing-notes_176420-16602.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "English Language Arts Instructor",
-      subject: "English Language Arts",
-      desc: "Ms. Sarah Thompson is an enthusiastic English Language Arts instructor who believes in the power of literature to broaden horizons and foster empathy",
-    },
-    {
-      name: "Mr. James Rodriguez",
-      image:
-        "https://img.freepik.com/premium-photo/portrait-young-male-teacher-light-background_99433-2422.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Social Studies Teacher",
-      subject: "Social Studies",
-      desc: " Mr. James Rodriguez is a passionate Social Studies teacher who brings history to life in his classroom. With a deep knowledge of world cultures and events.",
-    },
-    {
-      name: "Ms. Rachel Chang",
-      image:
-        "https://img.freepik.com/premium-photo/smiling-young-indian-female-math-teacher-sitting-desk-generative-ai_849906-11822.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Visual Arts Teacher",
-      subject: "Visual Arts",
-      desc: "Ms. Rachel Chang is a talented Visual Arts teacher who believes in the power of creativity to inspire and transform. With a background in fine arts.",
-    },
-    {
-      name: "Dr. Michael Lee",
-      image:
-        "https://img.freepik.com/free-photo/man-teacher-wearing-glasses-sitting-school-desk-checking-class-register-front-blackboard-classroom-looking-camera-with-angry-face_141793-132978.jpg?w=996&t=st=1707388865~exp=1707389465~hmac=4c4b23ac8d88c7338fb82c0a3df3431dcd3a27b97b608e9e5024e2eec20830dd",
-      position: "Physics Instructor",
-      subject: "Physics",
-      desc: "Dr. Michael Lee is an experienced Physics instructor with a passion for exploring the fundamental laws of the universe. With a Ph.D. in Physics, he brings a wealth of knowledge and enthusiasm to his classes.",
-    },
-    {
-      name: "Ms. Jessica Nguyen",
-      image:
-        "https://img.freepik.com/premium-photo/young-beautiful-woman-teacher-posing-with-gesture_1258-12099.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Physical Education Teacher",
-      subject: "Physical Education",
-      desc: " Ms. Jessica Nguyen is a dedicated Physical Education teacher who believes in the importance of fostering lifelong health and wellness habits. With a background in sports science.",
-    },
-    {
-      name: "Mr. Kevin Smith",
-      image:
-        "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      position: "Technology Education Instructor",
-      subject: "Technology Education",
-      desc: "Mr. Kevin Smith is a forward-thinking Technology Education instructor who is passionate about preparing students for the digital age. With expertise in coding and robotics.",
-    },
-  ];
-
-  const adminData = [
-    {
-      name: "Ms. Jennifer Thompson",
-      image:
-        "https://img.freepik.com/premium-photo/senior-indian-asian-business-women-saving-holding-calculating-currency-coins-business-finance-investment-concept_466689-27009.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: "Principal",
-      desc: " Ms. Jennifer Thompson serves as the Principal's Assistant at our school, providing invaluable support to the administrative team. With her exceptional organizational skills and attention to detail.",
-    },
-    {
-      name: "Mr. Andrew Davis",
-      image:
-        "https://img.freepik.com/free-photo/focused-businessman-looking-new-solutions_329181-19264.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: "Facilities Manager",
-      desc: "Mr. Andrew Davis is our dedicated Facilities Manager, responsible for overseeing the maintenance and upkeep of our school facilities. With his expertise in facility management.",
-    },
-    {
-      name: "Ms. Michelle Garcia",
-      image:
-        "https://img.freepik.com/free-photo/fashion-young-brunette-woman-posing_144627-46966.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: " School Counselor",
-      desc: "Ms. Michelle Garcia is our compassionate School Counselor, providing support and guidance to students as they navigate academic, social, and personal challenges.",
-    },
-    {
-      name: "Mr. Robert Johnson",
-      image:
-        "https://img.freepik.com/free-photo/young-businessman-happily-looking-camera-office-desk_114579-28370.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: "IT Coordinator",
-      desc: "Mr. Robert Johnson serves as our IT Coordinator, overseeing the technology infrastructure and digital resources at our school. With his technical expertise and problem-solving skills.",
-    },
-  ];
-
-  const supportData = [
-    {
-      name: "Ms. Lisa Thompson",
-      image:
-        "https://img.freepik.com/free-photo/top-view-young-female-office-worker-sitting-her-desk-folding-page_140725-106297.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: "Administrative Assistant",
-      desc: "Ms. Lisa Thompson serves as our Administrative Assistant, providing essential support to the administrative team. With her organizational skills and attention to detail.",
-    },
-    {
-      name: "Mr. John Smith",
-      image:
-        "https://img.freepik.com/free-photo/hotel-receptionist-work_23-2149661589.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      position: "Custodian",
-      desc: "Mr. John Smith is our dedicated Custodian, responsible for maintaining the cleanliness and safety of our school facilities. With his hard work and attention to detail.",
-    },
-  ];
-
-  const content = [
-    {
-      title: "Commitment to Excellence",
-      content:
-        "At [School Name], we prioritize excellence in education and strive to provide our students with the highest quality learning experiences. Our faculty members are committed to staying updated on the latest pedagogical practices and instructional methods to ensure that our students receive a well-rounded education that prepares them for success in the future.",
-    },
-    {
-      title: "Collaboration and Support",
-      content:
-        "We believe in the power of collaboration and teamwork in achieving our goals. Our faculty and staff work closely together to develop innovative teaching strategies, create a supportive learning environment, and address the individual needs of each student. Through open communication, mutual respect, and shared goals, we foster a culture of collaboration and support that benefits our entire school community.      ",
-    },
-  ];
-
   return (
     <div className="w-full flex flex-col gap-5 md:gap-10 py-5  md:px-20 px-5">
       {/* section 1 */}
@@ -244,7 +122,7 @@ export default function FacultyContent() {
       </div>
       {/* section 5 */}
       <div className="grid grid-cols-1 md:grid-cols-2  w-full gap-2 p-0 md:p-8">
-        {content.map((item, i) => {
+        {facultyContent.map((item, i) => {
           return (
             <div
               key={i}
@@ -261,10 +139,8 @@ export default function FacultyContent() {
       </div>
       {/* last section */}
       <div className="md:px-16 px-2 text-center">
-      <div>
-          <h2 className="text-xl text-[#12372A] font-semibold">
-          Get in Touch
-          </h2>
+        <div>
+          <h2 className="text-xl text-[#12372A] font-semibold">Get in Touch</h2>
         </div>
         <p className="mt-4">
           Join us at Ed-Web and embark on a journey towards a rewarding career

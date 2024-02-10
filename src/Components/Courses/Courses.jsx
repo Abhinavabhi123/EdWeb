@@ -2,30 +2,9 @@ import { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 import "./Courses.css";
+import { courseData } from "../../Services/constants";
 
 export default function Courses() {
-  const data = [
-    {
-      title: "Learners Educated",
-      count: 2563,
-      icon: "/Course 1.png",
-    },
-    {
-      title: "Courses",
-      count: 25356,
-      icon: "/Course 2.png",
-    },
-    {
-      title: "Syllabus",
-      count: 648,
-      icon: "/Course 3.png",
-    },
-    {
-      title: "Global Learning",
-      count: 9854,
-      icon: "/Course 4.png",
-    },
-  ];
   const [view, setView] = useState(false);
 
   return (
@@ -45,7 +24,7 @@ export default function Courses() {
       </div>
       <div className="show_div"></div>
       <div className="counter overflow-hidden">
-        {data.map((item, index) => (
+        {courseData.map((item, index) => (
           <div key={index} className="counter_div" data-aos="fade-left">
             <img src={item?.icon} alt="card icon" />
             <ScrollTrigger

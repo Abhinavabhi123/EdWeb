@@ -1,4 +1,6 @@
 import "./academic_main.css";
+import {  extraData } from "../../../../Services/constants";
+
 import { MdOutlineSportsScore, MdOutlineClass } from "react-icons/md";
 import { FaAward } from "react-icons/fa";
 import { PiGraphBold } from "react-icons/pi";
@@ -7,109 +9,59 @@ import { MdDraw } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
 import { BsGraphUpArrow } from "react-icons/bs";
 
+const Achievements = [
+  {
+    image: <MdOutlineSportsScore size={50}/>,
+    content:
+      "Our students consistently achieve high scores on standardized tests, demonstrating their mastery of core academic subjects and readiness for college and career success.",
+    title: "High Test Scores",
+  },
+  {
+    image: <FaAward size={40} />,
+    content:
+      "Many of our students are recipients of prestigious scholarship awards, recognizing their academic achievements, leadership qualities, and contributions to the community.",
+    title: "Scholarship Awards",
+  },
+  {
+    image: <MdOutlineClass size={40} />,
+    content:
+      "Our graduates are routinely accepted into top colleges and universities across the country and around the world, reflecting the quality of education they receive at [School Name].",
+    title: "College Acceptances",
+  },
+  {
+    image: <BsGraphUpArrow size={30} />,
+    content:
+      "Our AP and IB programs have a track record of success, with students earning impressive scores on exams and receiving college credit for their coursework.",
+    title: "Advanced Placement Success",
+  },
+  {
+    image: <FaBookReader size={40} />,
+    content:
+      "Our students regularly participate and excel in STEM competitions, showcasing their innovation, problem-solving skills, and teamwork.",
+    title: "STEM Competitions",
+  },
+  {
+    image: <MdDraw size={40} />,
+    content:
+      "Our arts programs have received recognition at the local, regional, and national levels, with students earning awards and accolades for their creativity and artistic talent.",
+    title: "Arts Recognition",
+  },
+  {
+    image: <IoMdSearch size={40} />,
+    content:
+      "Our students and faculty engage in cutting-edge research and scholarly activities, contributing to advancements in their fields and earning recognition for their work.",
+    title: "Research and Publications",
+  },
+  {
+    image: <PiGraphBold size={40} />,
+    content:
+      "We emphasize the importance of giving back to the community, and our students actively participate in service projects and initiatives that make a positive impact on society.",
+    title: "Community Engagement",
+  },
+];
+
 export default function AcademicMainContent() {
-  const data = [
-    {
-      image: <MdOutlineSportsScore size={50} />,
-      content:
-        "Our students consistently achieve high scores on standardized tests, demonstrating their mastery of core academic subjects and readiness for college and career success.",
-      title: "High Test Scores",
-    },
-    {
-      image: <FaAward size={40} />,
-      content:
-        "Many of our students are recipients of prestigious scholarship awards, recognizing their academic achievements, leadership qualities, and contributions to the community.",
-      title: "Scholarship Awards",
-    },
-    {
-      image: <MdOutlineClass size={40} />,
-      content:
-        "Our graduates are routinely accepted into top colleges and universities across the country and around the world, reflecting the quality of education they receive at [School Name].",
-      title: "College Acceptances",
-    },
-    {
-      image: <BsGraphUpArrow size={30} />,
-      content:
-        "Our AP and IB programs have a track record of success, with students earning impressive scores on exams and receiving college credit for their coursework.",
-      title: "Advanced Placement Success",
-    },
-    {
-      image: <FaBookReader size={40} />,
-      content:
-        "Our students regularly participate and excel in STEM competitions, showcasing their innovation, problem-solving skills, and teamwork.",
-      title: "STEM Competitions",
-    },
-    {
-      image: <MdDraw size={40} />,
-      content:
-        "Our arts programs have received recognition at the local, regional, and national levels, with students earning awards and accolades for their creativity and artistic talent.",
-      title: "Arts Recognition",
-    },
-    {
-      image: <IoMdSearch size={40} />,
-      content:
-        "Our students and faculty engage in cutting-edge research and scholarly activities, contributing to advancements in their fields and earning recognition for their work.",
-      title: "Research and Publications",
-    },
-    {
-      image: <PiGraphBold size={40} />,
-      content:
-        "We emphasize the importance of giving back to the community, and our students actively participate in service projects and initiatives that make a positive impact on society.",
-      title: "Community Engagement",
-    },
-  ];
-
-  const extraData = [
-    {
-      image:
-        "https://img.freepik.com/free-photo/front-view-trainer-talking-players_23-2149742084.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Sports Teams",
-      desc: "We offer a wide range of sports teams for students to participate in, including basketball, soccer, volleyball, track and field, swimming, tennis, and more. Our dedicated coaches provide expert instruction and guidance, helping students develop teamwork, discipline.",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-photo/artist-using-watercolor-paint-his-art-studio_23-2150213622.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Fine Arts Programs",
-      desc: "Our fine arts programs encompass a variety of artistic disciplines, including visual arts, performing arts, and music. Students can participate in art clubs, theater productions, choir, band, orchestra, and dance, allowing them to express their creativity and showcase their talents.",
-    },
-    {
-      image:
-        "https://img.freepik.com/premium-photo/diverse-education-shoot_53876-54692.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Academic Clubs",
-      desc: "We offer a diverse array of academic clubs and organizations that cater to students' interests and passions. From math and science clubs to debate and robotics teams, these clubs provide opportunities for intellectual growth, collaboration, and friendly.",
-    },
-    {
-      image:
-        "https://img.freepik.com/premium-photo/medium-shot-volunteers-helping-environment_23-2149181964.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Community Service",
-      desc: "Giving back to the community is an integral part of the [School Name] experience. Students have the opportunity to participate in community service projects and initiatives, such as volunteering at local charities, organizing fundraisers, and participating in environmental clean-up efforts.",
-    },
-    {
-      image:
-        "https://img.freepik.com/premium-photo/group-diverse-kids-drawing-chalkboard-together_53876-42174.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Cultural Clubs",
-      desc: " Our school celebrates diversity and multiculturalism through cultural clubs and organizations. Students can join clubs dedicated to exploring different cultures, languages, and traditions, fostering cross-cultural understanding and appreciation.",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-photo/young-students-learning-library-bookshelves_1150-10555.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Leadership Opportunities",
-      desc: "We empower students to become leaders in their school and community through leadership development programs and opportunities. Students can participate in student government, peer mentoring programs, and leadership workshops, gaining valuable leadership skills.",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-photo/full-shot-happy-kids-playing-bowling_23-2149199860.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-      title: "Special Interest Clubs",
-      desc: "From photography and chess clubs to gardening and coding clubs, we offer a variety of special interest clubs to cater to students' unique hobbies and interests. These clubs provide a supportive and inclusive environment for students to pursue their passions and connect. ",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-photo/team-mates-holding-golden-trophy-together_23-2148631464.jpg?w=996&t=st=1707537237~exp=1707537837~hmac=781c451919b794d9a51ac75fb8ceee756d2a8dcdf2008e7e375b106fe338652b",
-      title: "Competitions and Events",
-      desc: "Throughout the year, we host a variety of competitions, events, and extracurricular activities that allow students to showcase their talents and interests. These include academic competitions, talent shows, cultural festivals, and more, providing students with opportunities to shine.",
-    },
-  ];
-
+  
   return (
     <div className="w-full md:px-16 mt-10">
       <div className="flex p-5">
@@ -152,7 +104,7 @@ export default function AcademicMainContent() {
             <div className="w-full md:w-1/2 relative h-1/2 md:h-full flex justify-center items-center bg-transparent group transition-all duration-500">
               <img
                 className="w-full max-w-[30rem] md:max-w-full h-full object-cover"
-                src="https://img.freepik.com/free-vector/colorful-education-concept-with-flat-design_23-2147898685.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais"
+                src="/academic_main.avif"
                 alt="image"
               />
               <div className="w-full h-full absolute top-0 left-0 bg-[#2120207f] hidden bg-opacity-25 group-hover:flex transition-all duration-500 justify-center text-white items-center">
@@ -182,7 +134,7 @@ export default function AcademicMainContent() {
           </div>
           <div className="w-full min-h-[40rem] bg-transparent  flex justify-center items-center">
             <div className="w-[90%] grid  max-[566px]:grid-cols-1 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row auto-cols-auto md:grid-rows-2 h-fit bg-transparent p-0 md:p-5 gap-10 justify-center items-center md:justify-start md:items-start">
-              {data.map((item, i) => {
+              {Achievements.map((item, i) => {
                 return (
                   <div
                     key={i}
@@ -275,16 +227,11 @@ export default function AcademicMainContent() {
             <div className="w-full  md:w-fit h-1/2 md:h-full bg-transparent flex justify-center items-center">
               <img
                 className="md:max-w-full h-full object-contain"
-                src="https://img.freepik.com/premium-vector/education-concept-background-icons-education-equipment-graduation-science-abstract-education-background-vector-illustration_153097-3121.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais"
+                src="/Curriculum and Courses.avif"
                 alt="image"
               />
             </div>
             <div className="w-full md:w-2/3 h-fit md:h-full relative bg-transparent">
-              {/* <img
-                src="/background.svg"
-                className="w-full relative h-full"
-                alt="image"
-              /> */}
               <div className="w-full  h-full bg-[#0000001b] top-0 left-0 md:p-10 p-4 space-y-6">
                 <h3 className="font-semibold">Core Academic Subjects</h3>
                 <p className="text-sm md:text-base">
@@ -383,7 +330,7 @@ export default function AcademicMainContent() {
                 <div className="justify-center items-center mt-6 flex">
                   <img
                     className="w-80"
-                    src="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595850.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais"
+                    src="/academic_certificate.jpg"
                     alt="image"
                   />
                 </div>

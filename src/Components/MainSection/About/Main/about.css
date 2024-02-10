@@ -1,120 +1,106 @@
-.about_container{
-    background-image: url('https://img.freepik.com/free-photo/educational-objects-assortment-with-copy-space_23-2148721254.jpg?w=1060&t=st=1707303245~exp=1707303845~hmac=f41fe4ca89eaaf079c498b149de3174a79148a893a4f18d380825c75c01e3be4');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-image-width: 100%;
-    position: relative;
+.about_container {
+  background-image: url("/Banner Background/About_banner.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-image-width: 100%;
+  position: relative;
 }
 
-.about_container::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.468); */
-    background: linear-gradient(90deg, rgba(0, 38, 43, 1) 0%, rgba(255, 255, 255, 0) 100%);
+.about_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 38, 43, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-/* .community{
-    background-image: url('https://img.freepik.com/premium-photo/techno-mega-city-3d-rendering_41325-276.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-image-width: 100%;
-    position: relative;
-} */
 
-.slide_up_image{
-    position: absolute;
-    /* background-color: red; */
-    width: 18rem ;
-    height: 18rem;
-    border-radius: 15px;
-    visibility: hidden;
-    opacity: 0;
-    animation: slide_up 1s ease-in forwards , swing 2.5s linear 1.5s  infinite forwards;
-    /* animation: wave 3s infinite ease-in-out  forwards; */
+.slide_up_image {
+  position: absolute;
+
+  width: 18rem;
+  height: 18rem;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  animation: slide_up 1s ease-in forwards,
+    swing 2.5s linear 1.5s infinite forwards;
 }
 
 .line {
-    animation: grow 1s ease-in-out forwards;
-  }
+  animation: grow 1s ease-in-out forwards;
+}
 .arrow {
-    animation:show 1s ease-in-out forwards;
-  }
-
-.achieve_image::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(1, 25, 90, 0.89);
+  animation: show 1s ease-in-out forwards;
 }
 
+.achieve_image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(1, 25, 90, 0.89);
+}
 
-  @keyframes arrow {
-    
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
+@keyframes arrow {
+  from {
+    width: 0;
   }
-  
-  @keyframes grow {
-    from {
-      height: 0;
-    }
-    to {
-      height: 100%;
-    }
+  to {
+    width: 100%;
   }
+}
 
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
 
 @keyframes slide_up {
-    from{
-        visibility: hidden;
-        opacity: 0; 
-    }
-    to{
-        transform: translateY(-100px);
-        visibility: visible;
-        opacity: 1;
-        
-    }
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-100px);
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @keyframes swing {
-    0%{
-        transform: translateY(-100px);
-    }
-    50%{
-        transform: translateY(-80px);
-        
-    }
-    100%{
-        transform: translateY(-100px);
-
-    }
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
 }
 
-@media only screen and (max-width:812px) {
-    .slide_up_image{
-        width: 15rem ;
+@media only screen and (max-width: 812px) {
+  .slide_up_image {
+    width: 15rem;
     height: 15rem;
-    }
-    
+  }
 }
-@media only screen and (max-width:552px) {
-    .slide_up_image{
-        width: 10rem ;
+@media only screen and (max-width: 552px) {
+  .slide_up_image {
+    width: 10rem;
     height: 10rem;
-    }
-
-
+  }
 }

@@ -1,3 +1,7 @@
-.academic_card{
-    background: linear-gradient(180deg, rgb(0, 21, 159) 0%, rgba(8, 78, 255, 1) 100%);
+.academic_card {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 21, 159) 0%,
+    rgba(8, 78, 255, 1) 100%
+  );
 }

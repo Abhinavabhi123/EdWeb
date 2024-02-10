@@ -11,7 +11,6 @@ export default function NavBottom() {
               <Link to={"/about_us/mission"}>
                 <li className="nav1 rounded-t-md">School Mission and Vision</li>
               </Link>
-              {/* <li className="nav1">Missions & Values</li> */}
               <Link to={"/about_us/faculty"}>
                 <li className="nav1">Faculty and Staff</li>
               </Link>
@@ -106,8 +105,8 @@ export default function NavBottom() {
             </ul>
           </li>
           <li className="navList relative group">
-            Add More
-            <ul className="w-72 nav_animate h-fit z-50 absolute top-[2.4rem] bg-white rounded-md border shadow-md hidden group-hover:block">
+            <Link to={"/contact_us"}>Contact Us</Link>
+            {/* <ul className="w-72 nav_animate h-fit z-50 absolute top-[2.4rem] bg-white rounded-md border shadow-md hidden group-hover:block">
               <li className="nav1 rounded-t-md">School of Thought: Podcast</li>
               <li className="nav1">Choosing the Right School</li>
               <li className="nav1">Age-Grade Placement Guide</li>
@@ -116,7 +115,7 @@ export default function NavBottom() {
               <li className="nav1">GEMS Rewards</li>
               <li className="nav1">GEMS Ambassador Programme</li>
               <li className="nav1 rounded-b-md">GEMS Alumni App</li>
-            </ul>
+            </ul> */}
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
-// import { BiSolidPhoneCall } from "react-icons/bi";
-// import { IoBagHandleSharp } from "react-icons/io5";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { IoBagHandleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 export default function MenuOpen(Props) {
@@ -76,7 +76,7 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2 ">Career at GEMS</li>
         </ul>
         <div className="menu_details">
-          <p>Our Promise</p>
+          <p>Courses</p>
           {show[1].id === 2 && show[1].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -102,7 +102,7 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Beyond the Classroom</li>
         </ul>
         <div className="menu_details">
-          <p>Our Schools</p>
+          <p>Academics</p>
           {show[2].id === 3 && show[2].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -130,7 +130,7 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Scholarship</li>
         </ul>
         <div className="menu_details">
-          <p>Our Students</p>
+          <p>Students Life</p>
           {show[3].id === 4 && show[3].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -153,7 +153,7 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Student Experiences</li>
         </ul>
         <div className="menu_details">
-          <p>Names & Events</p>
+          <p>Admission</p>
           {show[4].id === 5 && show[4].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -177,7 +177,9 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Open School Events</li>
         </ul>
         <div className="menu_details">
-          <p>For Parents</p>
+          <Link to={"/contact_us"}>
+            <p>Contact us</p>
+          </Link>
           {show[5].id === 6 && show[5].show === false ? (
             <FaPlus
               className="cursor-pointer"
@@ -208,16 +210,16 @@ export default function MenuOpen(Props) {
           <li className="nav1 nav2">Feedback & Suggestion</li>
         </ul>
       </ul>
-      {/* <Link to={"/contact_us"} onClick={closeModal}>
+      <Link to={"/contact_us"} onClick={closeModal}>
         <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
           <BiSolidPhoneCall />
-          Contact
+          +91-1234567890
         </div>
       </Link>
       <div className="w-full h-6 text-white px-5 mt-5 flex items-center gap-2 cursor-pointer">
         <IoBagHandleSharp />
         Career
-      </div> */}
+      </div>
     </div>
   );
 }

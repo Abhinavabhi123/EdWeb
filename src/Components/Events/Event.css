@@ -6,7 +6,6 @@
   align-items: center;
 }
 .event p {
-  /* font-size: 30px; */
   font-family: "Encode Sans Condensed", sans-serif;
 }
 .expanded {
@@ -19,9 +18,7 @@
   transition: all 1s;
   animation: expand 0.2s forwards ease-in;
 }
-/* .card_content {
-  animation: expand-mob 0.5s forwards ease-in;
-} */
+
 .img_full {
   width: 100%;
   height: 80%;
@@ -38,6 +35,7 @@
 .gridContainer::-webkit-scrollbar {
   display: none;
 }
+
 @keyframes expand {
   0% {
     height: 0;
@@ -49,12 +47,3 @@
     height: 100%;
   }
 }
-
-/* @keyframes expand-mob {
-  0% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */

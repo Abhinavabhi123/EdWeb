@@ -1,9 +1,8 @@
 import "./Event.css";
 import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect } from "react";
+import { eventData } from "../../Services/constants";
 
 export default function EventUpdate() {
   const [expandedItems, setExpandedItems] = useState([]);
@@ -13,54 +12,6 @@ export default function EventUpdate() {
   useEffect(() => {
     setScreenWidth(window.innerWidth);
   }, [screenWidth]);
-
-  const images = [
-    {
-      img: "/Event 1.jpg",
-      title: "Annual Function",
-      desc:
-        "In educational institutions, an annual function is often a " +
-        "grand event where students showcase their talents through " +
-        "cultural programs, performances, and various artistic " +
-        "displays. It is an opportunity to celebrate academic " +
-        "achievements and foster a sense of community.",
-    },
-    {
-      img: "/Event 2.jpg",
-      title: "Basket Ball",
-      desc:
-        " The main objective of basketball is to score points by" +
-        "shooting a ball through the opponent's hoop. The team with the" +
-        "most points at the end of the game wins. The main objective of basketball" +
-        "is to score points by shooting a ball through the opponent's hoop.",
-    },
-    {
-      img: "/Event 3.jpg",
-      title: "Badminton",
-      desc:
-        "Badminton is a racket sport played either in singles (one player per side)" +
-        "or doubles (two players per side) across a rectangular court divided by a net." +
-        "The game is played with a shuttlecock, a feathered projectile with an open conical shape.",
-    },
-    {
-      img: "/Event 4.jpg",
-      title: "Ice skating",
-      desc:
-        "Ice skating is a popular recreational and competitive activity that" +
-        "involves moving on ice, usually wearing ice skates. It is enjoyed by people" +
-        "of various skill levels and is practiced both for fun and as a competitive sport." +
-        "figure skating and speed skating.",
-    },
-    {
-      img: "/Event 5.jpg",
-      title: "Reading",
-      desc:
-        "Reading is a cognitive process that involves decoding symbols to derive" +
-        "meaning from written or printed text. It is a fundamental skill and an essential" +
-        "aspect of education, information consumption, and personal development. Reading can" +
-        "take various forms, including reading.",
-    },
-  ];
 
   const toggleExpansion = (index) => {
     setExpandedItems((prev) =>
@@ -104,28 +55,12 @@ export default function EventUpdate() {
     px = "px-0";
     gap = "gap-2";
   }
-  // else if(windowWidth===360 && windowHeight==740 ){
-  //   scrollValue=286;
-  //   px="px-0";
-  //   gap="gap-2";
-  // }else if(windowWidth===768 && windowHeight===1024 ){
-  //   scrollValue=286;
-  //   width="w-[20vw]";
-  // }else if(windowWidth===280 && windowHeight===653 ){
-  //   scrollValue=286;
-  //   width="w-[80vw]";
-  // }else if(windowWidth===412 && windowHeight===914 ){
-  //   scrollValue=330;
-  //   gap="gap-2";
-  //   px="px-0";
-  //   width="w-[80vw]";
-  // }
 
   function scrollRight() {
     const gridContainer = document.getElementById("gridContainer");
     gridContainer.scrollLeft += scrollValue;
-    if (sliderIdx === images.length - 1) {
-      setSliderIdx(images.length - 1);
+    if (sliderIdx === eventData.length - 1) {
+      setSliderIdx(eventData.length - 1);
     } else {
       setSliderIdx(sliderIdx + 1);
     }
@@ -162,7 +97,7 @@ export default function EventUpdate() {
       return () => clearInterval(timer);
     } else {
       const timer = setInterval(() => {
-        setSliderIdx((prevIdx) => (prevIdx + 1) % images.length);
+        setSliderIdx((prevIdx) => (prevIdx + 1) % eventData.length);
       }, 5000);
       return () => clearInterval(timer);
     }
@@ -197,7 +132,7 @@ export default function EventUpdate() {
             id="gridContainer"
           >
             {screenWidth >= 550 ? (
-              images.map((item, i) => {
+              eventData.map((item, i) => {
                 return (
                   <div
                     key={i}
@@ -258,7 +193,7 @@ export default function EventUpdate() {
                   }`}
                 >
                   <img
-                    src={images[sliderIdx]?.img}
+                    src={eventData[sliderIdx]?.img}
                     alt="image"
                     className={`w-full h-full ease-in-out relative object-cover transform duration-700 hover:scale-105`}
                   />
@@ -272,7 +207,7 @@ export default function EventUpdate() {
                 >
                   <div className="h-10 w-full flex items-center justify-between px-4">
                     <p className="text-sm text-yellow-300">
-                      {images[sliderIdx]?.title}
+                      {eventData[sliderIdx]?.title}
                     </p>
                     {expandedItems.includes(sliderIdx) ? (
                       <IoIosArrowUp
@@ -291,7 +226,7 @@ export default function EventUpdate() {
                       expandedItems.includes(sliderIdx) ? "block" : "hidden"
                     } px-2 text-xs overflow-hidden`}
                   >
-                    {images[sliderIdx]?.desc}
+                    {eventData[sliderIdx]?.desc}
                   </div>
                 </div>
               </div>

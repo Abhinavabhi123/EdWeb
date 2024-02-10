@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { HashLoader } from "react-spinners";
 import { Routes, Route } from "react-router-dom";
 
-
 // import { AboutMission} from "../Pages/UserPages";
 
 import { Footer, Header } from "../Components";
@@ -12,8 +11,6 @@ import AcademicsRoute from "./AcademicsRoute";
 
 export default function UserRoute() {
   const [loading, setLoading] = useState(true);
-
-  
 
   useEffect(() => {
     setTimeout(() => {
@@ -28,7 +25,6 @@ export default function UserRoute() {
       </div>
     );
   }
-  
 
   return (
     <div>
@@ -37,7 +33,7 @@ export default function UserRoute() {
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about_us/*" element={<AboutRoutes/>} />
+        <Route path="/about_us/*" element={<AboutRoutes />} />
         <Route path="/contact_us" element={<ContactUsPage />} />
         <Route path="/academics/*" element={<AcademicsRoute />} />
       </Routes>

@@ -12,15 +12,14 @@ export default function Enroll() {
         <div className="w-full  flex justify-center items-center mt-2 px-3">
           <div className="md:w-[80%] w-[95%] bg-transparent h-full">
             <p className=" transition-colors duration-500">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Applications for the 2024-2025 school year are open as of October
-              1, 2023. The lottery for the 2023-2024 school year took place on
-              February 1, 2024. All applications submitted by January 31, 2024
-              were included in the lottery. Students must be 5 years old on or
-              before September 1, 2024 in order to attend school for the
-              2024-2025 school year. All applications received after January 31,
-              2024 will go on a wait list and will be contacted as space becomes
-              available.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Applications for the 2024-2025
+              school year are open as of October 1, 2023. The lottery for the
+              2023-2024 school year took place on February 1, 2024. All
+              applications submitted by January 31, 2024 were included in the
+              lottery. Students must be 5 years old on or before September 1,
+              2024 in order to attend school for the 2024-2025 school year. All
+              applications received after January 31, 2024 will go on a wait
+              list and will be contacted as space becomes available.
             </p>
           </div>
         </div>

@@ -15,14 +15,12 @@
     height: 18rem;
 }
 .text-card .imgBx{
-    /* width: 250px;
-    height: 120px; */
+
     position: absolute;
     border-radius: 12px;
     top: 20px;
     transition: 0.5s;
     z-index: 1;
-    /* background-color: white; */
 }
 .text-card .imgBX img{
     width: 100%;

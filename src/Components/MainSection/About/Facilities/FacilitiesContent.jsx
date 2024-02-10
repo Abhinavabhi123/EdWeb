@@ -1,53 +1,7 @@
+import { facilityData } from "../../../../Services/constants";
 import "./facilities.css";
 
 export default function FacilitiesContent() {
-  const data = [
-    [
-      {
-        img: "https://img.freepik.com/free-photo/empty-classroom-due-coronavirus-pandemic_637285-8845.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Modern Classroom",
-        text: "Our classrooms are equipped with the latest technology and resources to enhance teaching and learning. ",
-      },
-      {
-        img: "https://img.freepik.com/free-photo/interior-empty-science-laboratory-with-modern-equipment-prepared-pharmaceutical-innovation-using-high-tech-microbiology-tools-scientific-research-vaccine-development-against-covid19-virus_482257-12800.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Science and Computer Labs",
-        text: "Our fully equipped science laboratories offer students hands-on opportunities to explore and engage with scientific concepts.",
-      },
-      {
-        img: "https://img.freepik.com/free-photo/cafe-frankfurt-germany_1268-20912.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Library and Resource Center",
-        text: "Our library and resource center is a hub of knowledge and creativity, providing students with access to a wide range of resources, including books, e-books, digital databases, and multimedia materials.",
-      },
-      {
-        img: "https://img.freepik.com/free-photo/running-tracks-empty-health-club_637285-8442.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Sports and Fitness Center",
-        text: "Our school boasts top-notch athletic facilities to support our students' physical health and well-being. From well-maintained sports fields and courts to a fully equipped gymnasium.",
-      },
-    ],
-    [
-      {
-        img: "https://img.freepik.com/free-photo/oil-paints-brushes-palette-wood-wall_176420-2800.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Arts and Cultural Space",
-        text: "Our performing arts spaces provide a platform for students to showcase their talents and creativity. With a dedicated auditorium, music rooms, and rehearsal spaces.",
-      },
-      {
-        img: "https://img.freepik.com/premium-photo/lunch-kindergarten-russia-table-setting-before-meals_182793-2666.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Cafeteria and Dining Facilities",
-        text: "Our cafeteria and dining facilities provide nutritious and delicious meals to fuel our students' bodies and minds. With a variety of options to accommodate different dietary preferences and needs.",
-      },
-      {
-        img: "https://img.freepik.com/free-photo/standard-quality-control-collage_23-2149631022.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Safety and Security",
-        text: "We have established clear safety policies and procedures to govern conduct on campus and promote a culture of safety and respect. These policies cover areas such as bullying prevention, conflict resolution.",
-      },
-      {
-        img: "https://img.freepik.com/premium-photo/hdr-tate-gallery-london_469558-36056.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=ais",
-        title: "Good Campus",
-        text: "We are committed to sustainability and environmental stewardship, and our Green Campus Initiative reflects our dedication to creating a greener and more eco-friendly learning environment.",
-      },
-    ],
-  ];
-
   return (
     <div className="w-full mt-5 md:px-16  pt-5">
       <div className="w-full">
@@ -95,7 +49,7 @@ export default function FacilitiesContent() {
       </div>
       <div className="w-full  md:h-[25rem] h-[15rem] bg-transparent mt-5">
         <div className="w-full h-full flex">
-          {data[0]?.map((item, i) => {
+          {facilityData[0]?.map((item, i) => {
             return (
               <div
                 key={i}
@@ -122,7 +76,7 @@ export default function FacilitiesContent() {
       </div>
       <div className="w-full md:h-[25rem] h-[15rem] bg-transparent">
         <div className="w-full h-full flex">
-          {data[1]?.map((item, i) => {
+          {facilityData[1]?.map((item, i) => {
             return (
               <div
                 key={i}

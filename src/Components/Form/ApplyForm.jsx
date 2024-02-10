@@ -39,7 +39,6 @@ export default function ApplyForm() {
     onSubmit: () => {
       alert("Form submitted Successfully")
       console.log("Success");
-      // resetForm();
     },
   });
 
@@ -48,7 +47,7 @@ export default function ApplyForm() {
       className="w-full md:flex flex-shrink justify- md:pb-5"
       style={{
         backgroundImage:
-          "url('https://plus.unsplash.com/premium_photo-1661693491358-0404ef60870b?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('/home_page_form_image.avif')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: 'no-repeat',

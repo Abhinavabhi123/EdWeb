@@ -5,7 +5,7 @@ export default function AcademicsRoute() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<AcademicHome/>} />
+        <Route path="/" element={<AcademicHome />} />
       </Routes>
     </div>
   );

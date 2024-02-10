@@ -1,5 +1,5 @@
 .mission_banner {
-  background-image: url("/mission.jpg");
+  background-image: url("/Banner Background/mission.jpg");
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -18,14 +18,14 @@
     rgba(22, 22, 22, 0.3) 100%
   );
 }
-.shade{
+.shade {
   transition: all 0.5s ease-in-out;
 }
 .shade:hover::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.473);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.473);
+  z-index: 1;
 }

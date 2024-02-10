@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./testimonial.css";
+import { sliderData } from "../../../../Services/constants";
 
 export default function TestimonialContent() {
   var settings = {
@@ -37,33 +38,6 @@ export default function TestimonialContent() {
       </div>
     );
   };
-
-  const sliderData = [
-    {
-      image:
-        "https://img.freepik.com/free-photo/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space_23-2148767055.jpg?w=900&t=st=1706862410~exp=1706863010~hmac=8f99c6762f687c418b39c20c4794d278647b0e6c9086179fccb3d23d804bc84e",
-      content:
-        "Sending my child to [School Name] was the best decision I ever made. The caring teachers, engaging curriculum, and supportive community have truly made a difference in my child's life. - Parent",
-    },
-    {
-      image:
-        "https://img.freepik.com/free-photo/businessman-black-suit-makes-thumbs-up_114579-15900.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      content:
-        "I'll always be grateful to [School Name] for helping me discover my passion for learning. The opportunities for growth and the encouragement from teachers have shaped me into the person I am today. - Alumni",
-    },
-    {
-      image:
-        "https://img.freepik.com/premium-photo/businesswoman-suit-against-staircase-created-with-generative-ai-technology_132358-13230.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      content:
-        "I've watched my child flourish at [School Name]. The nurturing environment, challenging academics, and emphasis on character development have prepared my child for success. - Parent",
-    },
-    {
-      image:
-        "https://img.freepik.com/premium-photo/woman-holds-laptop-with-white-background_124185-4367.jpg?size=626&ext=jpg&ga=GA1.1.1981747240.1706546885&semt=sph",
-      content:
-        "The dedication and commitment of the faculty at [School Name] are unmatched. They not only teach subjects but also instill values that guide us throughout our lives. - Alumni",
-    },
-  ];
 
   return (
     <div className="w-full mt-5 md:px-16">

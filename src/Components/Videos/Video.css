@@ -1,18 +1,21 @@
-.color{
-  background: linear-gradient(0deg, rgba(5, 5, 5, 0.651) 0%, rgba(250, 250, 250, 0) 100%);
+.color {
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 0.651) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
 }
 
-.video{
+.video {
   transform: translateX(-50%);
   animation: slide 1s ease-in-out 0.3 forwards;
 }
 
-@keyframes slide{
-  from{
+@keyframes slide {
+  from {
     transform: translateX(-300px);
   }
-  to{
-    
+  to {
     transform: translateX(81.3rem);
   }
 }

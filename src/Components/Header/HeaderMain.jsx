@@ -20,13 +20,12 @@ export default function HeaderMain() {
   }
   useEffect(() => {
     if (!menuOpen) {
-      const input = document.getElementById('check');
-      if (input) { 
+      const input = document.getElementById("check");
+      if (input) {
         input.checked = false;
       }
     }
-  }, [menuOpen]); 
-
+  }, [menuOpen]);
 
   return (
     <>

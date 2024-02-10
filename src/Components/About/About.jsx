@@ -4,13 +4,15 @@ export default function About() {
       <div className="px-10 md:w-[50rem] w-full md:h-auto relative flex justify-center">
         <img
           className="md:h-64 h-52 w-auto absolute md:-right-20 md:-top-32 -top-32  drop-shadow-xl rounded shadow-black"
-          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhY2hpbmd8ZW58MHx8MHx8fDA%3D"
+          src="/About_home_page_image.avif"
           alt="about image"
         />
       </div>
       <div className="p-2 md:pe-28">
         <div className=" border rounded-md border-gray-500 bg-slate-100 shadow-lg  md:p-10 md:ps-24 p-10 pt-20 md:space-y-6 flex flex-col space-y-6">
-          <h1 className="text-[20px] md:text-[30px] text-text_color font-semibold underline ms-[40%] md:ms-[20%]">About Us</h1>
+          <h1 className="text-[20px] md:text-[30px] text-text_color font-semibold underline ms-[40%] md:ms-[20%]">
+            About Us
+          </h1>
           <p>
             {" "}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to ED-Web, where education
@@ -27,7 +29,10 @@ export default function About() {
             landscape.
           </p>
           <div className="flex justify-end">
-            <a className="bg-text_color text-white p-2 rounded-md w-fit"> Read More</a>
+            <a className="bg-text_color text-white p-2 rounded-md w-fit">
+              {" "}
+              Read More
+            </a>
           </div>
         </div>
       </div>
